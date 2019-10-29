@@ -1,0 +1,53 @@
+:root{
+  --tersier_colorLeft:#fcde9c;
+  --secondary_colorLeft:#44FFD2;
+  --main_color: #ff63fe;
+  --secondary_colorRight: #1B065E;
+  --tersier_colorRight: #750d37;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  stroke-width: 1;
+}
+.services-icon {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+bgc2, .vLine, .hLine, #team {
+    background-color: var(--main_color);
+}
+.quote-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.services-icon {
+    font-size: 60px;
+    margin-left: 2rem;
+}
+.navbar{
+  background-color: var(--secondary_colorLeft) !important;
+}
+.lead, .display-4 {
+  font-weight: 600;
+}
+a{
+  text-decoration: none !important;
+  color: inherit;
+}
