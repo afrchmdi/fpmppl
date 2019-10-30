@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'ViewController@gethilang');
+Route::get('/dashboard', function(){
+    return view('page.dashboard');
+});

@@ -197,12 +197,12 @@
 aria-hidden="true">
 <div class="modal-dialog form-dark" role="document">
   <!--Content-->
-  <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg');">
+  <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg'); width:400px; height:600px">
     <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
       <!--Header-->
       <div class="modal-header text-center pb-4">
-        <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>SIGN</strong> <a
-            class="green-text font-weight-bold"><strong> UP</strong></a></h3>
+        <h3 class="modal-title w-100 white-text font-weight-bold" style="color:green;" id="myModalLabel"><strong>SIGN</strong> <a
+            class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a></h3>
         <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -212,17 +212,17 @@ aria-hidden="true">
         <!--Body-->
         <div class="md-form mb-5">
           <input type="email" id="Form-email5" class="form-control validate white-text">
-          <label data-error="wrong" data-success="right" for="Form-email5">Your email</label>
+          <label data-error="wrong" data-success="right" for="Form-email5" style="color:black;">Your email</label>
         </div>
 
         <div class="md-form pb-3">
           <input type="password" id="Form-pass5" class="form-control validate white-text">
-          <label data-error="wrong" data-success="right" for="Form-pass5">Your password</label>
-          <div class="form-group mt-4">
+          <label data-error="wrong" data-success="right" for="Form-pass5" style="color:black;">Your password</label>
+          {{-- <div class="form-group mt-4">
             <input class="form-check-input" type="checkbox" id="checkbox624">
             <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
                 Terms and Conditions</a></label>
-          </div>
+          </div> --}}
         </div>
 
         <!--Grid row-->
