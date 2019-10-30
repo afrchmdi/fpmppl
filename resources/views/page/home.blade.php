@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link type="image/png" rel="shortcut icon" href="images/favicon.png">
+    <link type="image/png" rel="shortcut icon" href="img/favicon.png">
     <title>I-Temu</title>
   </head>
 
@@ -22,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="home.html"><img src="images/logo.png" width="100dp" height="auto"></a>
+        <a class="navbar-brand" href="home.html"><img src="img/logo.png" width="100dp" height="auto"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -87,21 +87,21 @@
 
     <!-- Page Content -->
     <section class="py-5 text-center">
-      <a href="home.html"><img src="images/logo.png" width="400dp" height="auto"></a><br><br>
+      <a href="home.html"><img src="img/logo.png" width="400dp" height="auto"></a><br><br>
       <div class="container"> 
         <h2 class="text-center">Layanan I-Temu</h2>
         <p class="text-muted mb-5 text-center">Solusi tepat kehilangan dan penemuan barang!</p>
         <div class="row">
           <div class="col-sm-6 col-lg-6 mb-3">
             <a href="temuan.html">
-                <img src="images/lost.png" width="150dp" height="150dp"><br><br>
+                <img src="img/lost.png" width="150dp" height="150dp"><br><br>
                 <h6>Barang Temuan</h6>
             </a>
             <p class="text-muted">Pantau barang temuan selama ini</p>
           </div>
           <div class="col-sm-6 col-lg-6 mb-3">
             <a href="hilang.html">
-                <img src="images/found.png" width="150dp" height="150dp"><br><br>
+                <img src="img/found.png" width="150dp" height="150dp"><br><br>
                 <h6>Barang Hilang</h6>
             </a>
             <p class="text-muted">Pasang informasi mengenai barang hilang</p>
@@ -116,21 +116,21 @@
         <div class="row">
           <div class="card-columns">
             <div class="card shadow border-0">
-              <img class="card-img-top" src="images/lostandfound1.jpg" width="300dp" height="250dp" alt="Card image cap">
+              <img class="card-img-top" src="img/lostandfound1.jpg" width="300dp" height="250dp" alt="Card image cap">
               <div class="card-body text-center">
                 <h5 class="card-title">Tepat</h5>
                 <p class="card-text">Temukan dan klaim barang Anda dengan informasi yang tepat</p>
               </div>
             </div>
             <div class="card shadow border-0">
-              <img class="card-img-top" src="images/lostandfound2.jpg" width="300dp" height="250dp" alt="Card image cap">
+              <img class="card-img-top" src="img/lostandfound2.jpg" width="300dp" height="250dp" alt="Card image cap">
               <div class="card-body text-center">
                 <h5 class="card-title">Terpercaya</h5>
                 <p class="card-text">Informasi yang disediakan kami jamin dapat dipercaya</p>
               </div>
             </div>
             <div class="card shadow border-0">
-              <img class="card-img-top" src="images/lostandfound3.jpg" width="300dp" height="250dp" alt="Card image cap">
+              <img class="card-img-top" src="img/lostandfound3.jpg" width="300dp" height="250dp" alt="Card image cap">
               <div class="card-body text-center">
                 <h5 class="card-title">Cepat</h5>
                 <p class="card-text">Informasi barang dapat diupdate secara real-time</p>
