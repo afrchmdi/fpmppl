@@ -8,6 +8,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="css/home.css" rel="stylesheet">
+    <link href="css/form-login.css" rel="stylesheet">
     <!------ Include the above in your HEAD tag ---------->    
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -31,7 +32,9 @@
               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dashboard.html">Login</a>
+              {{-- <a class="nav-link" href="dashboard.html">Login</a> --}}
+              {{-- <a class="nav-link" data-toggle="modal" data-target="#show-login" class="js-show-login">Login</a> --}}
+              <a href="" class="nav-link btn btn-default btn-rounded js-show-login" data-toggle="modal" data-target="#show-login">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -67,7 +70,7 @@
           <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1531190260877-c8d11eb5afaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')">
             <div class="carousel-caption d-none d-md-block">
               <h2 class="display-4" style="color: black;">I-Temu - Klaim</h2>
-              <p class="lead" style="color: black;">Lakukan klaim dengan informasi yang valid disini.</p>
+              <p class="lead" style="color: white;">Lakukan klaim dengan informasi yang valid disini.</p>
             </div>
           </div>
         </div>
@@ -188,4 +191,71 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
   </body>
+
+  <!-- Modal -->
+<div class="modal fade" id="show-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog form-dark" role="document">
+  <!--Content-->
+  <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg');">
+    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+      <!--Header-->
+      <div class="modal-header text-center pb-4">
+        <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>SIGN</strong> <a
+            class="green-text font-weight-bold"><strong> UP</strong></a></h3>
+        <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+        <!--Body-->
+        <div class="md-form mb-5">
+          <input type="email" id="Form-email5" class="form-control validate white-text">
+          <label data-error="wrong" data-success="right" for="Form-email5">Your email</label>
+        </div>
+
+        <div class="md-form pb-3">
+          <input type="password" id="Form-pass5" class="form-control validate white-text">
+          <label data-error="wrong" data-success="right" for="Form-pass5">Your password</label>
+          <div class="form-group mt-4">
+            <input class="form-check-input" type="checkbox" id="checkbox624">
+            <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                Terms and Conditions</a></label>
+          </div>
+        </div>
+
+        <!--Grid row-->
+        <div class="row d-flex align-items-center mb-4">
+
+          <!--Grid column-->
+          <div class="text-center mb-3 col-md-12">
+            <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-12">
+            <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
+                Log in</a></p>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+    </div>
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal -->
+
 </html>
