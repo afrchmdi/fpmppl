@@ -197,9 +197,8 @@
 aria-hidden="true">
 <div class="modal-dialog form-dark" role="document">
   <!--Content-->
-  {{-- <form action="{{route('login')}}" method="POST"> --}}
-  <form>
-      {{-- {{ csrf_field() }} --}}
+  <form action="{{route('login')}}" method="POST">
+      {{ csrf_field() }}
   <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg'); width:400px; height:600px">
     <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
       <!--Header-->

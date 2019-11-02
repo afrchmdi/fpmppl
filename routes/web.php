@@ -15,11 +15,12 @@ Route::get('/', function () {
     return view('page.home');
 });
 
-Route::post('login', 'LoginController@authenticate')->name('login');
+// Route::post('login', 'LoginController@authenticate')->name('login');
 
-Route::get('/home', 'ViewController@gethilang');
-Route::get('/home', 'AdminController@index');
+// Route::get('/home', 'ViewController@gethilang');
+// Route::get('/home', 'AdminController@index');
 Route::get('/dashboard', 'UserController@index');
+Route::get('/temuan', 'ViewController@temuan');
 // Route::get('/dashboard', function(){
 //     return view('page.dashboard');
 // });
