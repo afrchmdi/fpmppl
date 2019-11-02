@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return view('page.home');
 });
+Route::get('/404', function(){
+    return abort(404);
+});
+Route::get('/500', function(){
+    return abort(500);
+});
 // Route::get('/home', 'ViewController@gethilang');
 Route::get('/home', function(){
     return view('page.home');
@@ -21,6 +27,6 @@ Route::get('/home', function(){
 Route::get('/dashboard', function(){
     return view('page.dashboard');
 });
-Route::get('/404', function(){
-    return abort(404);
+Route::get('/temuan', function(){
+    return view('page.temuan');
 });
