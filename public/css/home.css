@@ -36,7 +36,7 @@ bgc2, .vLine, .hLine, #team {
     margin-left: 2rem;
 }
 .navbar{
-  background-color: var(--secondary_colorLeft) !important;
+  background-color: var(--tersier_colorLeft) !important;
 }
 .lead, .display-4 {
   font-weight: 600;

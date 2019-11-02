@@ -60,7 +60,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
   </head>
 
-  <body class="skin-blue sidebar-mini">
+  <body class="skin-purple sidebar-mini">
     <div class="wrapper">
 
       @include('layout.header')
