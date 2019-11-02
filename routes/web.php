@@ -14,8 +14,13 @@
 Route::get('/', function () {
     return view('page.home');
 });
-
-Route::get('/home', 'ViewController@gethilang');
+// Route::get('/home', 'ViewController@gethilang');
+Route::get('/home', function(){
+    return view('page.home');
+});
 Route::get('/dashboard', function(){
     return view('page.dashboard');
+});
+Route::get('/404', function(){
+    return abort(404);
 });

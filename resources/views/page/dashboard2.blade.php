@@ -4,11 +4,11 @@
 <html lang="en">
 <head>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-    <link type="image/png" rel="shortcut icon" href="images/favicon.png">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!------ Include the above in your HEAD tag ---------->
+    <link type="image/png" rel="shortcut icon" href="img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,8 +20,8 @@
             <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
                 <div class="logo">
                     <a href="home.html">
-                        <img src="images/logo.png" alt="i-temu_logo" class="hidden-xs hidden-sm">
-                        <img src="images/logo.png" alt=i-temu_logo" class="visible-xs visible-sm circle-logo">
+                        <img src="img/logo.png" alt="i-temu_logo" class="hidden-xs hidden-sm">
+                        <img src="img/logo.png" alt=i-temu_logo" class="visible-xs visible-sm circle-logo">
                     </a>
                 </div>
                 <div class="navi">
@@ -66,7 +66,7 @@
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/user.svg" width="20dp" height="20dp" alt="user">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/user.svg" width="20dp" height="20dp" alt="user">
                                             <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li>
