@@ -10,7 +10,7 @@
           <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
 
           <p>
-            We could not find the page you were looking for.
+            We could not find the page you were looking for.<br>
             Meanwhile, you may <a href="/dashboard">return to dashboard</a> or
             <a href="/">home</a>
           </p>

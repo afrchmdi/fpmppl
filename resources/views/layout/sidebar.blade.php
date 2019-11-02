@@ -5,7 +5,19 @@
 
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active"><a href="#"><i class="fa fa-history"></i><span>Riwayat Akun</span></a></li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-history"></i>
+            <span>Riwayat Akun</span>
+            <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+            </span>  
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-send"></i>Postingan</a></li>
+            <li><a href="#"><i class="fa fa-hand-stop-o"></i>Klaim</a></li>
+          </ul>
+        </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-bullhorn"></i> 
@@ -15,9 +27,33 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-search-plus"></i>Temuan</a></li>
-            <li><a href="#"><i class="fa fa-search-minus"></i>Hilang</a></li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>Temuan</a></li>
+            <li><a href="#"><i class="fa fa-calendar-times-o"></i>Hilang</a></li>
           </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-mail-reply-all"></i> 
+            <span>Laporan Klaim</span>
+            <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-check"></i>Penemuan</a></li>
+            <li><a href="#"><i class="fa fa-close"></i>Kehilangan</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-envelope-o"></i><span>Ruang Email</span></a></li>
+        <!-- kalo admin, maka man akun baru bisa -->
+        <?php
+          $lalala = "user";
+          if($lalala === "admin"){
+        ?>
+        <li><a href="#"><i class="fa fa-users"></i><span>Manajemen Akun</span></a></li>
+        <?php
+          }
+        ?>
     </section>
 
     <!-- /.sidebar -->
