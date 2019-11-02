@@ -15,8 +15,52 @@
     <!-- Navbar Right Menu -->
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
+        <!-- User Account: style can be found in dropdown.less -->
+        <li class="dropdown user user-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="AdminLTE/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+            <span class="hidden-xs">Alexander Pierce</span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- User image -->
+            <li class="user-header">
+              <img src="AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <p>Alexander Pierce</p>
+            </li>
+            <!-- Menu Body -->
+            <li class="user-body">
+              <div class="row">
+                <div class="col-xs-6 text-center">
+                  <a href="#">Ubah Password</a>
+                </div>
+                <!-- <div class="col-xs-4 text-center">
+                  <a href="#">Sales</a>
+                </div> -->
+                <div class="col-xs-6 text-center">
+                  <a href="#">Bantuan</a>
+                </div>
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="#" class="btn btn-default">Profil</a>
+              </div>
+              <div class="pull-right">
+                <a href="#" class="btn btn-default">Log out</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+<!-- 
         <li>
-        <a href="/ubah-password">
+          <a href="/profil">
+            <i class="fa fa-user"></i> Profil
+          </a>
+        </li>
+        <li>
+          <a href="/ubah-password">
             <i class="fa fa-edit"></i> Ubah Password
           </a>
         </li>
@@ -30,7 +74,7 @@
             <a href="{{('/logout')}}">
               <i class="fa fa-sign-out"></i> Logout
             </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>

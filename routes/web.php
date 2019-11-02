@@ -14,7 +14,12 @@
 Route::get('/', function () {
     return view('page.home');
 });
-
+Route::get('/404', function () {
+    return abort(404);
+});
+Route::get('/500', function () {
+    return view(500);
+});
 // Route::post('login', 'LoginController@authenticate')->name('login');
 
 // Route::get('/home', 'ViewController@gethilang');
