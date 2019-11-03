@@ -163,7 +163,8 @@
         <!-- Team Member 2 -->
         <div class="col-xl-4 col-md-6 mb-4">
           <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+            <img src="img/team1.jpg" class="card-img-top" alt="...">
+            {{-- <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="..."> --}}
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Aurelia Fairuz Rachmadi</h5>
               <div class="card-text text-black-50">Back-End Developer</div>
@@ -173,167 +174,14 @@
         <!-- Team Member 3 -->
         <div class="col-xl-4 col-md-6 mb-4">
           <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+            <img src="img/team1.jpg" class="card-img-top" alt="...">
+            {{-- <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="..."> --}}
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Ismail Arifin</h5>
               <div class="card-text text-black-50">Database Engineer</div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Collapsible Accordion</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="box-group" id="accordion">
-                <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
-                <div class="panel box box-primary">
-                  <div class="box-header with-border">
-                    <h4 class="box-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
-                        Collapsible Group Item #1
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                    <div class="box-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                      nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                      labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel box box-danger">
-                  <div class="box-header with-border">
-                    <h4 class="box-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">
-                        Collapsible Group Danger
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                    <div class="box-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                      nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                      labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel box box-success">
-                  <div class="box-header with-border">
-                    <h4 class="box-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="" aria-expanded="true">
-                        Collapsible Group Success
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseThree" class="panel-collapse collapse in" aria-expanded="true" style="">
-                    <div class="box-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                      nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                      labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="box box-solid">
-          <div class="box-header with-border">
-            <h3 class="box-title">Collapsible Accordion</h3>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <div class="box-group" id="accordion">
-              <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
-              <div class="panel box box-primary">
-                <div class="box-header with-border">
-                  <h4 class="box-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
-                      Collapsible Group Item #1
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="box-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="panel box box-danger">
-                <div class="box-header with-border">
-                  <h4 class="box-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">
-                      Collapsible Group Danger
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="box-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="panel box box-success">
-                <div class="box-header with-border">
-                  <h4 class="box-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="" aria-expanded="true">
-                      Collapsible Group Success
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse in" aria-expanded="true" style="">
-                  <div class="box-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
       </div>
     </div>
 
@@ -346,71 +194,78 @@
   </body>
 
   <!-- Modal -->
-<div class="modal fade" id="show-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog form-dark" role="document">
-  <!--Content-->
-  {{-- <form action="{{route('login')}}" method="POST"> --}}
-  <form>
+  <div class="modal fade" id="show-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog form-dark" role="document">
+      <!--Content-->
+      {{-- <form action="{{route('login')}}" method="POST"> --}}
+      <form>
       {{-- {{ csrf_field() }} --}}
-  <div class="modal-content card card-image" style="background-image: url('https://images.unsplash.com/photo-1563389845985-b1570abc6784?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'); background-size:cover; background-repeat:no-repeat; width:400px; height:600px">
-    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-      <!--Header-->
-      <div class="modal-header text-center pb-4">
-        <h3 class="modal-title w-100 white-text font-weight-bold" style="color:green; text-align:center" id="myModalLabel"><strong>SIGN</strong> <a
-            class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a></h3>
-        <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <!--Body-->
-      <div class="modal-body">
-        <!--Body-->
-        <div class="md-form mb-5">
-          <input type="email" id="Form-email5" class="form-control validate white-text">
-          <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
-        </div>
-
-        <div class="md-form pb-3">
-          <input type="password" id="Form-pass5" class="form-control validate white-text">
-          <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
-          {{-- <div class="form-group mt-4">
-            <input class="form-check-input" type="checkbox" id="checkbox624">
-            <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
-                Terms and Conditions</a></label>
-          </div> --}}
-        </div>
-
-        <!--Grid row-->
-        <div class="row d-flex align-items-center mb-4">
-
-          <!--Grid column-->
-          <div class="text-center mb-3 col-md-12">
-            <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button>
+      <div class="modal-content card card-image" style="background-image: url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:400px; height:600px">
+        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+          <!--Header-->
+          <div class="modal-header text-center pb-4">
+            <h3 class="modal-title w-100 white-text font-weight-bold" style="color:green; text-align:center" id="myModalLabel">
+              <strong>SIGN</strong>
+              <a class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a>
+            </h3>
+            <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
+          <!--Body-->
+          <div class="modal-body">
+            <!--Body-->
+            <div class="md-form mb-3">
+                <input type="text" id="Form-email5" class="form-control validate white-text">
+                <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your fullname</label>
+              </div>
+            <div class="md-form mb-3">
+              <input type="email" id="Form-email5" class="form-control validate white-text">
+              <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
+            </div>
+            <div class="md-form pb-3">
+              <input type="password" id="Form-pass5" class="form-control validate white-text">
+              <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
+              {{-- <div class="form-group mt-4">
+                <input class="form-check-input" type="checkbox" id="checkbox624">
+                <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                    Terms and Conditions</a></label>
+              </div> --}}
+            </div>
+            <div class="md-form pb-3">
+                <input type="password" id="Form-pass5" class="form-control validate white-text">
+                <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Retype your password</label>
+                {{-- <div class="form-group mt-4">
+                  <input class="form-check-input" type="checkbox" id="checkbox624">
+                  <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                      Terms and Conditions</a></label>
+                </div> --}}
+              </div>
+            <!--Grid row-->
+            <div class="row d-flex align-items-center mb-4">
+              <!--Grid column-->
+              <div class="text-center mb-3 col-md-12">
+                <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
       </form>
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-12">
-            <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
-                Log in</a></p>
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-12">
+                <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
+                    Log in</a></p>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
           </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
       </div>
-    </div>
   </div>
   <!--/.Content-->
-</div>
+  </div>
 </div>
 <!-- Modal -->
 

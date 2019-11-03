@@ -18,7 +18,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-sticky-note-o"></i>
       </div>
-      <a href="#" class="small-box-footer">Selengkapnya di Riwayat Akun Postingan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/riwayat.postingan" class="small-box-footer">Selengkapnya di Riwayat Akun Postingan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <div class="col-lg-6 col-xs-6">
@@ -31,7 +31,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-balance-scale"></i>
       </div>
-      <a href="#" class="small-box-footer">Selengkapnya di Riwayat Akun Klaim  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/riwayat.klaim" class="small-box-footer">Selengkapnya di Riwayat Akun Klaim  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
 </div>

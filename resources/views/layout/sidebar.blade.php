@@ -5,7 +5,7 @@
 
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-history"></i>
             <span>Riwayat Akun</span>
@@ -14,8 +14,8 @@
             </span>  
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-send"></i>Postingan</a></li>
-            <li><a href="#"><i class="fa fa-hand-stop-o"></i>Klaim</a></li>
+            <li><a href="/riwayat.postingan"><i class="fa fa-send"></i>Postingan</a></li>
+            <li><a href="/riwayat.klaim"><i class="fa fa-hand-stop-o"></i>Klaim</a></li>
           </ul>
         </li>
         <li class="treeview">

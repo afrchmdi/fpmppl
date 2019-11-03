@@ -18,7 +18,7 @@ Route::get('/404', function () {
     return abort(404);
 });
 Route::get('/500', function () {
-    return view(500);
+    return abort(500);
 });
 // Route::post('login', 'LoginController@authenticate')->name('login');
 
@@ -26,6 +26,11 @@ Route::get('/500', function () {
 // Route::get('/home', 'AdminController@index');
 Route::get('/dashboard', 'UserController@index');
 Route::get('/temuan', 'ViewController@temuan');
-// Route::get('/dashboard', function(){
-//     return view('page.dashboard');
-// });
+
+// mentah
+Route::get('/riwayat.postingan', function () {
+    return view('page.riwayat_postingan');
+});
+Route::get('/riwayat.klaim', function () {
+    return view('page.riwayat_klaim');
+});
