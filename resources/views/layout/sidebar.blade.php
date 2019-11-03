@@ -14,8 +14,32 @@
             </span>  
           </a>
           <ul class="treeview-menu">
-            <li><a href="/riwayat.postingan"><i class="fa fa-send"></i>Postingan</a></li>
-            <li><a href="/riwayat.klaim"><i class="fa fa-hand-stop-o"></i>Klaim</a></li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-send"></i>
+                <span>Postingan</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/riwayat.postingan.penemuan"><i class="fa fa-check"></i>Penemuan</a></li>
+                <li><a href="/riwayat.postingan.kehilangan"><i class="fa fa-close"></i>Kehilangan</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-hand-stop-o"></i>
+                  <span>Klaim</span>
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="/riwayat.klaim.penemuan"><i class="fa fa-check"></i>Penemuan</a></li>
+                  <li><a href="/riwayat.klaim.kehilangan"><i class="fa fa-close"></i>Kehilangan</a></li>
+                </ul>
+              </li>
           </ul>
         </li>
         <li class="treeview">

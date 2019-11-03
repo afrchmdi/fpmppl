@@ -28,9 +28,15 @@ Route::get('/dashboard', 'UserController@index');
 Route::get('/temuan', 'ViewController@temuan');
 
 // mentah
-Route::get('/riwayat.postingan', function () {
-    return view('page.riwayat_postingan');
+Route::get('/riwayat.postingan.penemuan', function () {
+    return view('page.riwayat_postingan_penemuan');
 });
-Route::get('/riwayat.klaim', function () {
-    return view('page.riwayat_klaim');
+Route::get('/riwayat.postingan.kehilangan', function () {
+    return view('page.riwayat_postingan_kehilangan');
+});
+Route::get('/riwayat.klaim.penemuan', function () {
+    return view('page.riwayat_klaim_penemuan');
+});
+Route::get('/riwayat.klaim.kehilangan', function () {
+    return view('page.riwayat_klaim_kehilangan');
 });

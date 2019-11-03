@@ -10,7 +10,7 @@ Dashboard
   <div class="col-xs-12">
     <div class="box">
       <div class="box-header">
-        <h3>Riwayat Akun - Postingan</h3>
+        <h3>Riwayat Akun - Klaim</h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
