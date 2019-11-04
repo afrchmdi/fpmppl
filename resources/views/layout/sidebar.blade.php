@@ -64,17 +64,17 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-check"></i>Penemuan</a></li>
-            <li><a href="#"><i class="fa fa-close"></i>Kehilangan</a></li>
+            <li><a href="/laporan.klaim.penemuan"><i class="fa fa-check"></i>Penemuan</a></li>
+            <li><a href="/laporan.klaim.kehilangan"><i class="fa fa-close"></i>Kehilangan</a></li>
           </ul>
         </li>
-        <li><a href="#"><i class="fa fa-envelope-o"></i><span>Ruang Email</span></a></li>
+        <li><a href="/ruang.email"><i class="fa fa-envelope-o"></i><span>Ruang Email</span></a></li>
         <!-- kalo admin, maka man akun baru bisa -->
         <?php
           $lalala = "user";
           if($lalala === "admin"){
         ?>
-        <li><a href="#"><i class="fa fa-users"></i><span>Manajemen Akun</span></a></li>
+        <li><a href="/manajemen.akun"><i class="fa fa-users"></i><span>Manajemen Akun</span></a></li>
         <?php
           }
         ?>

@@ -197,71 +197,143 @@
   <div class="modal fade" id="show-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog form-dark" role="document">
       <!--Content-->
-      {{-- <form action="{{route('login')}}" method="POST"> --}}
-      <form>
       {{-- {{ csrf_field() }} --}}
-      <div class="modal-content card card-image" style="background-image: url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:400px; height:600px">
+      <div class="modal-content card card-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:400px; height:auto">
         <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-          <!--Header-->
-          <div class="modal-header text-center pb-4">
-            <h3 class="modal-title w-100 white-text font-weight-bold" style="color:green; text-align:center" id="myModalLabel">
-              <strong>SIGN</strong>
-              <a class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a>
-            </h3>
-            <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--Body-->
-          <div class="modal-body">
-            <!--Body-->
-            <div class="md-form mb-3">
-                <input type="text" id="Form-email5" class="form-control validate white-text">
-                <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your fullname</label>
-              </div>
-            <div class="md-form mb-3">
-              <input type="email" id="Form-email5" class="form-control validate white-text">
-              <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
-            </div>
-            <div class="md-form pb-3">
-              <input type="password" id="Form-pass5" class="form-control validate white-text">
-              <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
-              {{-- <div class="form-group mt-4">
-                <input class="form-check-input" type="checkbox" id="checkbox624">
-                <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
-                    Terms and Conditions</a></label>
-              </div> --}}
-            </div>
-            <div class="md-form pb-3">
-                <input type="password" id="Form-pass5" class="form-control validate white-text">
-                <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Retype your password</label>
-                {{-- <div class="form-group mt-4">
-                  <input class="form-check-input" type="checkbox" id="checkbox624">
-                  <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
-                      Terms and Conditions</a></label>
-                </div> --}}
-              </div>
-            <!--Grid row-->
-            <div class="row d-flex align-items-center mb-4">
-              <!--Grid column-->
-              <div class="text-center mb-3 col-md-12">
-                <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-      </form>
-            <!--Grid row-->
             <div class="row">
-              <!--Grid column-->
-              <div class="col-md-12">
-                <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
-                    Log in</a></p>
+                <div class="col-md-12">
+                  <!-- Custom Tabs -->
+                  <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs row">
+                      <li class="active col-md-6" style="text-align:center">
+                        <a href="#tab_1" data-toggle="tab">
+                          <b>Sign Up</b>
+                        </a>
+                      </li>
+                      <li class="col-md-6" style="text-align:center">
+                        <a href="#tab_2" data-toggle="tab"style="text-align:right">
+                          <b>Log In</b>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab_1">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                          <h3 class="modal-title w-100 white-text font-weight-bold" style="color:green; text-align:center" id="myModalLabel">
+                            <strong>SIGN</strong>
+                            <a class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a>
+                          </h3>
+                          <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
+                          {{-- <form action="{{route('login')}}" method="POST"> --}}
+                          <form>
+                          <!--Body-->
+                          <div class="md-form mb-3">
+                            <input type="text" id="Form-fullname5" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your fullname</label>
+                          </div>
+                          <div class="md-form mb-3">
+                            <input type="email" id="Form-email5" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
+                          </div>
+                          <div class="md-form pb-3">
+                            <input type="password" id="Form-pass5" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
+                          </div>
+                          <div class="md-form pb-3">
+                            <input type="password" id="Form-repass5" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Retype your password</label>
+                            {{-- <div class="form-group mt-4">
+                              <input class="form-check-input" type="checkbox" id="checkbox624">
+                              <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                                  Terms and Conditions</a></label>
+                            </div> --}}
+                            </div>
+                          <!--Grid row-->
+                          <div class="row d-flex align-items-center mb-4">
+                            <!--Grid column-->
+                            <div class="text-center mb-3 col-md-12">
+                              <a href="/dashboard"><button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button></a>
+                            </div>
+                            <!--Grid column-->
+                          </div>
+                          <!--Grid row-->
+                          </form>
+                          <!--Grid row-->
+                          <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                              <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#tab_2" data-toggle="tab" class="green-text ml-1 font-weight-bold">
+                                Log in</a></p>
+                            </div>
+                            <!--Grid column-->
+                          </div>
+                          <!--Grid row-->
+                        </div>
+                      </div>
+                      <!-- /.tab-pane -->
+                      <div class="tab-pane" id="tab_2">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h3 class="modal-title w-100 white-text font-weight-bold" style="color:green; text-align:center" id="myModalLabel">
+                              <strong>LOG</strong>
+                              <a class="green-text font-weight-bold" style="color:green;"><strong> IN</strong></a>
+                            </h3>
+                            <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <!--Body-->
+                          <div class="modal-body">
+                            {{-- <form action="{{route('login')}}" method="POST"> --}}
+                            <form>
+                            <!--Body-->
+                            <div class="md-form mb-3">
+                              <input type="email" id="Form-email" class="form-control validate white-text">
+                              <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
+                            </div>
+                            <div class="md-form pb-3">
+                              <input type="password" id="Form-pass" class="form-control validate white-text">
+                              <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
+                              {{-- <div class="form-group mt-4">
+                                <input class="form-check-input" type="checkbox" id="checkbox624">
+                                <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                                    Terms and Conditions</a></label>
+                              </div> --}}
+                            <!--Grid row-->
+                            <div class="row d-flex align-items-center mb-4">
+                              <!--Grid column-->
+                              <div class="text-center mb-3 col-md-12">
+                                <a href="/dashboard"><button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Log in</button></a>
+                              </div>
+                              <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                            </form>
+                            <!--Grid row-->
+                            <div class="row">
+                              <!--Grid column-->
+                              <div class="col-md-12">
+                                <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a href="#tab_1" data-toggle="tab" class="green-text ml-1 font-weight-bold">
+                                    Sign up</a></p>
+                              </div>
+                              <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                          </div>
+                      </div>
+                    </div>
+                    <!-- /.tab-content -->
+                  </div>
+                  <!-- nav-tabs-custom -->
+                </div>
+                <!-- /.col -->
               </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </div>
       </div>
   </div>
   <!--/.Content-->

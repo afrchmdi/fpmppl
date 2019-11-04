@@ -40,3 +40,21 @@ Route::get('/riwayat.klaim.penemuan', function () {
 Route::get('/riwayat.klaim.kehilangan', function () {
     return view('page.riwayat_klaim_kehilangan');
 });
+Route::get('/barang.temuan', function () {
+    return view('page.barang_temuan');
+});
+Route::get('/barang.hilang', function () {
+    return view('page.barang_hilang');
+});
+Route::get('/laporan.klaim.penemuan', function () {
+    return view('page.laporan_klaim_penemuan');
+});
+Route::get('/laporan.klaim.kehilangan', function () {
+    return view('page.laporan_klaim_kehilangan');
+});
+Route::get('/ruang.email', function () {
+    return view('page.ruang_email');
+});
+Route::get('/manajemen.akun', function () {
+    return view('page.manajamen_akun');
+});

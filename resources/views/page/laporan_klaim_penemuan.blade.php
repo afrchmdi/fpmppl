@@ -10,9 +10,7 @@ Dashboard
   <div class="col-xs-12">
     <div class="box">
       <div class="box-header">
-        <div class="col-xs-6"><h3>Riwayat Akun - <b>Postingan Penemuan</b></h3></div>
-        <div class="col-xs-3"></div>
-        <div class="col-xs-3"><a href="#"><button type="button" class="btn btn-block btn-primary">Post Barang Temuan</button></a></div>
+        <h3>Laporan - <b>Klaim Penemuan</b></h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -24,7 +22,6 @@ Dashboard
               <th>Platform(s)</th>
               <th>Engine version</th>
               <th>CSS grade</th>
-              <th>Action</th>
             </tr>
             </thead>
             <tbody>
@@ -36,7 +33,6 @@ Dashboard
               <td>Win 95+</td>
               <td> 4</td>
               <td>X</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Trident</td>
@@ -46,7 +42,6 @@ Dashboard
               <td>Win 95+</td>
               <td>5</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Trident</td>
@@ -56,7 +51,6 @@ Dashboard
               <td>Win 95+</td>
               <td>5.5</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Trident</td>
@@ -66,7 +60,6 @@ Dashboard
               <td>Win 98+</td>
               <td>6</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Trident</td>
@@ -74,7 +67,6 @@ Dashboard
               <td>Win XP SP2+</td>
               <td>7</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Trident</td>
@@ -82,7 +74,6 @@ Dashboard
               <td>Win XP</td>
               <td>6</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -90,7 +81,6 @@ Dashboard
               <td>Win 98+ / OSX.2+</td>
               <td>1.7</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -98,7 +88,6 @@ Dashboard
               <td>Win 98+ / OSX.2+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -106,7 +95,6 @@ Dashboard
               <td>Win 98+ / OSX.2+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -114,7 +102,6 @@ Dashboard
               <td>Win 2k+ / OSX.3+</td>
               <td>1.9</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -122,7 +109,6 @@ Dashboard
               <td>OSX.2+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -130,7 +116,6 @@ Dashboard
               <td>OSX.3+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -138,7 +123,6 @@ Dashboard
               <td>Win 95+ / Mac OS 8.6-9.2</td>
               <td>1.7</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -146,7 +130,6 @@ Dashboard
               <td>Win 98SE+</td>
               <td>1.7</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -154,7 +137,6 @@ Dashboard
               <td>Win 98+ / OSX.2+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -162,7 +144,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -170,7 +151,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1.1</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -178,7 +158,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1.2</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -186,7 +165,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1.3</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -194,7 +172,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1.4</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -202,7 +179,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1.5</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -210,7 +186,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>1.6</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -218,7 +193,6 @@ Dashboard
               <td>Win 98+ / OSX.1+</td>
               <td>1.7</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -226,7 +200,6 @@ Dashboard
               <td>Win 98+ / OSX.1+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -234,7 +207,6 @@ Dashboard
               <td>Win 98+ / OSX.2+</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Gecko</td>
@@ -242,7 +214,6 @@ Dashboard
               <td>Gnome</td>
               <td>1.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -250,7 +221,6 @@ Dashboard
               <td>OSX.3</td>
               <td>125.5</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -258,7 +228,6 @@ Dashboard
               <td>OSX.3</td>
               <td>312.8</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -266,7 +235,6 @@ Dashboard
               <td>OSX.4+</td>
               <td>419.3</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -274,7 +242,6 @@ Dashboard
               <td>OSX.4+</td>
               <td>522.1</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -282,7 +249,6 @@ Dashboard
               <td>OSX.4+</td>
               <td>420</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -290,7 +256,6 @@ Dashboard
               <td>iPod</td>
               <td>420.1</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Webkit</td>
@@ -298,7 +263,6 @@ Dashboard
               <td>S60</td>
               <td>413</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -306,7 +270,6 @@ Dashboard
               <td>Win 95+ / OSX.1+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -314,7 +277,6 @@ Dashboard
               <td>Win 95+ / OSX.2+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -322,7 +284,6 @@ Dashboard
               <td>Win 95+ / OSX.2+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -330,7 +291,6 @@ Dashboard
               <td>Win 95+ / OSX.2+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -338,7 +298,6 @@ Dashboard
               <td>Win 95+ / OSX.3+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -346,7 +305,6 @@ Dashboard
               <td>Win 88+ / OSX.3+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -354,7 +312,6 @@ Dashboard
               <td>Win 88+ / OSX.3+</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -362,7 +319,6 @@ Dashboard
               <td>Wii</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -370,7 +326,6 @@ Dashboard
               <td>N800</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Presto</td>
@@ -378,7 +333,6 @@ Dashboard
               <td>Nintendo DS</td>
               <td>8.5</td>
               <td>C/A<sup>1</sup></td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>KHTML</td>
@@ -386,7 +340,6 @@ Dashboard
               <td>KDE 3.1</td>
               <td>3.1</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>KHTML</td>
@@ -394,7 +347,6 @@ Dashboard
               <td>KDE 3.3</td>
               <td>3.3</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>KHTML</td>
@@ -402,7 +354,6 @@ Dashboard
               <td>KDE 3.5</td>
               <td>3.5</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Tasman</td>
@@ -410,7 +361,6 @@ Dashboard
               <td>Mac OS 8-9</td>
               <td>-</td>
               <td>X</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Tasman</td>
@@ -418,7 +368,6 @@ Dashboard
               <td>Mac OS 7.6-9</td>
               <td>1</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Tasman</td>
@@ -426,7 +375,6 @@ Dashboard
               <td>Mac OS 8-X</td>
               <td>1</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -434,7 +382,6 @@ Dashboard
               <td>Embedded devices</td>
               <td>-</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -442,7 +389,6 @@ Dashboard
               <td>Embedded devices</td>
               <td>-</td>
               <td>A</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -450,7 +396,6 @@ Dashboard
               <td>Embedded devices</td>
               <td>-</td>
               <td>X</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -458,7 +403,6 @@ Dashboard
               <td>Text only</td>
               <td>-</td>
               <td>X</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -466,7 +410,6 @@ Dashboard
               <td>Text only</td>
               <td>-</td>
               <td>X</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -474,7 +417,6 @@ Dashboard
               <td>Windows Mobile 6</td>
               <td>-</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Misc</td>
@@ -482,7 +424,6 @@ Dashboard
               <td>PSP</td>
               <td>-</td>
               <td>C</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             <tr>
               <td>Other browsers</td>
@@ -490,7 +431,6 @@ Dashboard
               <td>-</td>
               <td>-</td>
               <td>U</td>
-              <td><a href="#"><button type="button" class="btn btn-block btn-primary">Edit</button></a></td>
             </tr>
             </tbody>
             <tfoot>
@@ -500,7 +440,6 @@ Dashboard
               <th>Platform(s)</th>
               <th>Engine version</th>
               <th>CSS grade</th>
-              <th>Action</th>
             </tr>
             </tfoot>
           </table>
