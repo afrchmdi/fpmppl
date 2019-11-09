@@ -225,7 +225,7 @@
                             <a class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a>
                           </h3>
                           <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true" style="color:white">&times;</span>
                           </button>
                         </div>
                         <!--Body-->
@@ -235,7 +235,7 @@
                           <!--Body-->
                           <div class="md-form mb-3">
                             <input type="text" id="Form-fullname5" class="form-control validate white-text">
-                            <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your fullname</label>
+                            <label data-error="wrong" data-success="right" for="Form-fullname5" style="color:white;">Your fullname</label>
                           </div>
                           <div class="md-form mb-3">
                             <input type="email" id="Form-email5" class="form-control validate white-text">
@@ -246,8 +246,8 @@
                             <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
                           </div>
                           <div class="md-form pb-3">
-                            <input type="password" id="Form-repass5" class="form-control validate white-text">
-                            <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Retype your password</label>
+                            <input type="password" id="Form-pass2" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-pass2" style="color:white;">Retype your password</label>
                             {{-- <div class="form-group mt-4">
                               <input class="form-check-input" type="checkbox" id="checkbox624">
                               <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
@@ -275,7 +275,7 @@
                               <a class="green-text font-weight-bold" style="color:green;"><strong> IN</strong></a>
                             </h3>
                             <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
+                              <span aria-hidden="true" style="color:white" style="color:white">&times;</span>
                             </button>
                           </div>
                           <!--Body-->
@@ -285,11 +285,11 @@
                             <!--Body-->
                             <div class="md-form mb-3">
                               <input type="email" id="Form-email" class="form-control validate white-text">
-                              <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
+                              <label data-error="wrong" data-success="right" for="Form-email" style="color:white;">Your email</label>
                             </div>
                             <div class="md-form pb-3">
                               <input type="password" id="Form-pass" class="form-control validate white-text">
-                              <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
+                              <label data-error="wrong" data-success="right" for="Form-pass" style="color:white;">Your password</label>
                               {{-- <div class="form-group mt-4">
                                 <input class="form-check-input" type="checkbox" id="checkbox624">
                                 <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
