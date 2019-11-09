@@ -31,7 +31,7 @@
     <!-- bootstrap color picker -->
     <script src="AdminLTE/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
     <!-- bootstrap time picker -->
-    <script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="AdminLTE/plugins/timepicker/bootstrap-timepicker.min.js"></script>
     <!-- SlimScroll -->
     <script src="AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <!-- iCheck 1.0.1 -->
