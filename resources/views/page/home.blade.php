@@ -32,7 +32,7 @@
             <li class="nav-item">
               {{-- <a class="nav-link" href="dashboard.html">Login</a> --}}
               {{-- <a class="nav-link" data-toggle="modal" data-target="#show-login" class="js-show-login">Login</a> --}}
-              <a href="" class="nav-link btn btn-default btn-rounded js-show-login" data-toggle="modal" data-target="#show-login">Login</a>
+              <a href="" class="nav-link btn btn-default btn-rounded js-show-login" data-toggle="modal" data-target="#show-login">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -198,7 +198,7 @@
     <div class="modal-dialog form-dark" role="document">
       <!--Content-->
       {{-- {{ csrf_field() }} --}}
-      <div class="modal-content card card-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:400px; height:auto">
+      <div class="modal-content card card-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:auto; height:auto">
         <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
             <div class="row">
                 <div class="col-md-12">
@@ -264,16 +264,6 @@
                           </div>
                           <!--Grid row-->
                           </form>
-                          <!--Grid row-->
-                          <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                              <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#tab_2" data-toggle="tab" class="green-text ml-1 font-weight-bold">
-                                Log in</a></p>
-                            </div>
-                            <!--Grid column-->
-                          </div>
-                          <!--Grid row-->
                         </div>
                       </div>
                       <!-- /.tab-pane -->
@@ -315,16 +305,6 @@
                             </div>
                             <!--Grid row-->
                             </form>
-                            <!--Grid row-->
-                            <div class="row">
-                              <!--Grid column-->
-                              <div class="col-md-12">
-                                <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a href="#tab_1" data-toggle="tab" class="green-text ml-1 font-weight-bold">
-                                    Sign up</a></p>
-                              </div>
-                              <!--Grid column-->
-                            </div>
-                            <!--Grid row-->
                           </div>
                       </div>
                     </div>
