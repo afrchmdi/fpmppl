@@ -1002,30 +1002,31 @@ $(function () {
   </div>
   <!-- /.modal -->
 
+
 {{-- tampilkan foto terbaru yang diupload --}}
 <script>
 document.getElementById("Form-foto").onchange = function () {
-    var reader = new FileReader();
+  var reader = new FileReader();
 
-    reader.onload = function (e) {
-        // get loaded data and render thumbnail.
-        document.getElementById("image").src = e.target.result;
-    };
+  reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      document.getElementById("image").src = e.target.result;
+  };
 
-    // read the image file as a data URL.
-    reader.readAsDataURL(this.files[0]);
+  // read the image file as a data URL.
+  reader.readAsDataURL(this.files[0]);
 };
 
 document.getElementById("Form-foto2").onchange = function () {
-    var reader = new FileReader();
+  var reader = new FileReader();
 
-    reader.onload = function (e) {
-        // get loaded data and render thumbnail.
-        document.getElementById("image2").src = e.target.result;
-    };
+  reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      document.getElementById("image2").src = e.target.result;
+  };
 
-    // read the image file as a data URL.
-    reader.readAsDataURL(this.files[0]);
+  // read the image file as a data URL.
+  reader.readAsDataURL(this.files[0]);
 };
 </script>
 @endsection

@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="home.html"><img src="img/logo.png" width="100dp" height="auto"></a>
+        <a class="navbar-brand" href="/"><img src="img/logo.png" width="100dp" height="auto"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -85,7 +85,7 @@
 
     <!-- Page Content -->
     <section class="py-5 text-center">
-      <a href="home.html"><img src="img/logo.png" width="400dp" height="auto"></a><br><br>
+      <a href="/"><img src="img/logo.png" width="400dp" height="auto"></a><br><br>
       <div class="container"> 
         <h2 class="text-center">Layanan I-Temu</h2>
         <p class="text-muted mb-5 text-center">Solusi tepat kehilangan dan penemuan barang!</p>
