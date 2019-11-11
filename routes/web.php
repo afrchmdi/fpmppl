@@ -19,12 +19,16 @@ Route::get('/404', function () {
 });
 Route::get('/500', function () {
     return abort(500);
-});
-// Route::post('login', 'LoginController@authenticate')->name('login');
+})->name('500');
+Route::post('/login', 'LoginController@authenticate')->name('login');
+Route::post('/signup', 'LoginController@signup')->name('signup');
+Route::get('logout', 'LoginController@logout')->name('logout');
 
 // Route::get('/home', 'ViewController@gethilang');
 // Route::get('/home', 'AdminController@index');
+
 Route::get('/dashboard', 'UserController@index');
+Route::get('/admin', 'AdminController@index');
 Route::get('/temuan', 'ViewController@temuan');
 
 // mentah

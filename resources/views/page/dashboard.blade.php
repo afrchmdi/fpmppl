@@ -2,7 +2,7 @@
 
 @section('content-header')
 Dashboard
-<small><?="Alexander Lalala"?></small>
+<small>{{Auth::user()->nama}}</small>
 @endsection
 
 @section('content')
