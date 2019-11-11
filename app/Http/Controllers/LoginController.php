@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
  
 class LoginController extends Controller
 {
@@ -17,11 +18,13 @@ class LoginController extends Controller
  
     public function authenticate(Request $request)
     {
-        $credentials = $request->only('username', 'password');
-
+        $credentials = $request->only('email', 'password');
+        // dd($request->email);
         if (Auth::attempt($credentials)) {
+            // return redirect()->intended('admin');
             // return Auth::user();
-            if(Auth::check() && Auth::user()->aktor == 1)
+            // dd($credentials);
+            if(Auth::attempt($credentials) && Auth::user()->aktor == 1)
             {
                 return redirect()->intended('admin');
             } else{
@@ -29,12 +32,34 @@ class LoginController extends Controller
             }
 
         }
-
+        
         else {
-            // return redirect()->intended('/');
+            // alert("gagal:(");
+            return redirect()->intended('500');
+            // echo"gagal";
             return redirect()->back()->with('failmessage', 'Username/Password anda salah!');
 
         }
+    }
+    
+    public function signup(Request $request){
+        // $credentials = $request->only('name', 'email', 'password', 'retype');
+
+        if($request->password == $request->retype){
+            $user = new User();
+            $user->nama = $request->name;
+            $user->username = $request->username;
+            $user->password = bcrypt($request->password);
+            $user->email = $request->email;
+            $user->aktor = 2;
+
+            $user->save();
+            return redirect()->back()->with('alert', 'Sign Up berhasil!');
+        }
+        else{
+            return redirect()->back()->with('alert', 'Password tidak cocok');
+        }
+
     }
 
     public function logout(){

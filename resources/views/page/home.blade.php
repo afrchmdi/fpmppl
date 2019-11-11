@@ -43,6 +43,15 @@
     </nav>
 
     <header>
+        @if(session()->has('successmessage'))
+        <div class="alert alert-success">
+            {{ session()->get('successmessage') }}
+        </div>
+        @elseif(session()->has('failmessage'))
+        <div class="alert alert-danger">
+            {{ session()->get('failmessage') }}
+        </div>
+        @endif
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -231,22 +240,28 @@
                         <!--Body-->
                         <div class="modal-body">
                           {{-- <form action="{{route('login')}}" method="POST"> --}}
-                          <form>
+                          {{-- <form> --}}
+                        <form action="{{route('signup')}}" method="POST">
+                            {{ csrf_field() }}
                           <!--Body-->
                           <div class="md-form mb-3">
-                            <input type="text" id="Form-fullname5" class="form-control validate white-text">
+                            <input type="text" id="name" name="name" class="form-control validate white-text">
                             <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your fullname</label>
                           </div>
                           <div class="md-form mb-3">
-                            <input type="email" id="Form-email5" class="form-control validate white-text">
+                            <input type="email" name="email" id="email" class="form-control validate white-text">
                             <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
                           </div>
+                          <div class="md-form mb-3">
+                            <input type="text" name="username" id="username" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your username</label>
+                          </div>
                           <div class="md-form pb-3">
-                            <input type="password" id="Form-pass5" class="form-control validate white-text">
+                            <input type="password" name="password" id="password" class="form-control validate white-text">
                             <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
                           </div>
                           <div class="md-form pb-3">
-                            <input type="password" id="Form-repass5" class="form-control validate white-text">
+                            <input type="password" name="retype" id="retype" class="form-control validate white-text">
                             <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Retype your password</label>
                             {{-- <div class="form-group mt-4">
                               <input class="form-check-input" type="checkbox" id="checkbox624">
@@ -258,7 +273,7 @@
                           <div class="row d-flex align-items-center mb-4">
                             <!--Grid column-->
                             <div class="text-center mb-3 col-md-12">
-                              <a href="/dashboard"><button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button></a>
+                            <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Sign up</button>
                             </div>
                             <!--Grid column-->
                           </div>
@@ -290,15 +305,15 @@
                           </div>
                           <!--Body-->
                           <div class="modal-body">
-                            {{-- <form action="{{route('login')}}" method="POST"> --}}
-                            <form>
+                            <form action="{{route('login')}}" method="POST">
+                              {{ csrf_field() }}
                             <!--Body-->
                             <div class="md-form mb-3">
-                              <input type="email" id="Form-email" class="form-control validate white-text">
-                              <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your email</label>
+                              <input type="email" id="email" name="email" class="form-control validate white-text">
+                              <label data-error="wrong" data-success="right" for="Form-email5" style="color:white;">Your emaiiil</label>
                             </div>
                             <div class="md-form pb-3">
-                              <input type="password" id="Form-pass" class="form-control validate white-text">
+                              <input name="password" type="password" id="Form-pass" class="form-control validate white-text">
                               <label data-error="wrong" data-success="right" for="Form-pass5" style="color:white;">Your password</label>
                               {{-- <div class="form-group mt-4">
                                 <input class="form-check-input" type="checkbox" id="checkbox624">
@@ -309,7 +324,8 @@
                             <div class="row d-flex align-items-center mb-4">
                               <!--Grid column-->
                               <div class="text-center mb-3 col-md-12">
-                                <a href="/dashboard"><button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Log in</button></a>
+                                {{-- <a href="/login"><button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Log in</button></a> --}}
+                                <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Log in</button>
                               </div>
                               <!--Grid column-->
                             </div>

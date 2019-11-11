@@ -7,13 +7,20 @@ use Illuminate\Database\Migrations\Migration;
 class CreateBarangHilang extends Migration
 {
     /**
+     * Schema table name to migrate
+     * @var string
+     */
+    public $set_schema_table = 'barang_hilang';
+    /**
      * Run the migrations.
+     * @table barang_hilang
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('barang_hilang', function (Blueprint $table) {
+        if (Schema::hasTable($this->set_schema_table)) return;
+        Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama_barang', 20);
             $table->integer('id_pencari');
@@ -36,6 +43,6 @@ class CreateBarangHilang extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('barang_hilang');
+        Schema::dropIfExists($this->set_schema_table);
     }
 }

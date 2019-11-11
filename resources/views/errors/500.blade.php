@@ -11,7 +11,7 @@
           <h3><i class="fa fa-warning text-red"></i> Oops! Something went wrong.</h3>
 
           <p>
-            We could not find the page you were looking for.<br>
+            Internal Server Error<br>
             Meanwhile, you may <a href="/dashboard">return to dashboard</a> or
             <a href="/">home</a>
           </p>
