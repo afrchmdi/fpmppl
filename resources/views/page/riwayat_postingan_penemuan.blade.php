@@ -701,10 +701,10 @@ Dashboard
 <script>
 $(function () {
   $('#datepicker').datepicker({
-  autoclose: true
+    autoclose: true
   })
   $('#datepicker2').datepicker({
-  autoclose: true
+    autoclose: true
   })
 })
 </script>
