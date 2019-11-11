@@ -18,8 +18,8 @@ Dashboard
       <div class="icon">
         <i class="fa fa-sticky-note-o"></i>
       </div>
-      <a href="/riwayat.postingan.penemuan" class="small-box-footer">Selengkapnya di Riwayat Akun Postingan Penemuan  <i class="fa fa-arrow-circle-right"></i></a>
-      <a href="/riwayat.postingan.kehilangan" class="small-box-footer">Selengkapnya di Riwayat Akun Postingan Kehilangan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/riwayat.postingan.penemuan" class="small-box-footer">Riwayat Akun Postingan Penemuan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/riwayat.postingan.kehilangan" class="small-box-footer">Riwayat Akun Postingan Kehilangan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <div class="col-lg-6 col-xs-6">
@@ -32,8 +32,8 @@ Dashboard
       <div class="icon">
         <i class="fa fa-balance-scale"></i>
       </div>
-      <a href="/riwayat.klaim.penemuan" class="small-box-footer">Selengkapnya di Riwayat Akun Klaim Penemuan  <i class="fa fa-arrow-circle-right"></i></a>
-      <a href="/riwayat.klaim.kehilangan" class="small-box-footer">Selengkapnya di Riwayat Akun Klaim Kehilangan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/riwayat.klaim.penemuan" class="small-box-footer">Riwayat Akun Klaim Penemuan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/riwayat.klaim.kehilangan" class="small-box-footer">Riwayat Akun Klaim Kehilangan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
 </div>
@@ -49,7 +49,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-mobile-phone"></i>
       </div>
-      <a href="#" class="small-box-footer">Selengkapnya di Daftar Barang Temuan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="#" class="small-box-footer">Daftar Barang Temuan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <div class="col-lg-6 col-xs-6">
@@ -62,7 +62,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-briefcase"></i>
       </div>
-      <a href="#" class="small-box-footer">Selengkapnya di Daftar Barang Hilang  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="#" class="small-box-footer">Daftar Barang Hilang  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
 </div>
@@ -78,7 +78,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-flag-o"></i>
       </div>
-      <a href="/laporan.klaim.penemuan" class="small-box-footer">Selengkapnya di Laporan Klaim Penemuan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/laporan.klaim.penemuan" class="small-box-footer">Laporan Klaim Penemuan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <div class="col-lg-6 col-xs-6">
@@ -91,7 +91,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-flag"></i>
       </div>
-      <a href="/laporan.klaim.kehilangan" class="small-box-footer">Selengkapnya di Laporan Klaim Kehilangan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/laporan.klaim.kehilangan" class="small-box-footer">Laporan Klaim Kehilangan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
 </div>

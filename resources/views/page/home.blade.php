@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="home.html"><img src="img/logo.png" width="100dp" height="auto"></a>
+        <a class="navbar-brand" href="/"><img src="img/logo.png" width="100dp" height="auto"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +32,7 @@
             <li class="nav-item">
               {{-- <a class="nav-link" href="dashboard.html">Login</a> --}}
               {{-- <a class="nav-link" data-toggle="modal" data-target="#show-login" class="js-show-login">Login</a> --}}
-              <a href="" class="nav-link btn btn-default btn-rounded js-show-login" data-toggle="modal" data-target="#show-login">Login</a>
+              <a href="" class="nav-link btn btn-default btn-rounded js-show-login" data-toggle="modal" data-target="#show-login">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -94,7 +94,7 @@
 
     <!-- Page Content -->
     <section class="py-5 text-center">
-      <a href="home.html"><img src="img/logo.png" width="400dp" height="auto"></a><br><br>
+      <a href="/"><img src="img/logo.png" width="400dp" height="auto"></a><br><br>
       <div class="container"> 
         <h2 class="text-center">Layanan I-Temu</h2>
         <p class="text-muted mb-5 text-center">Solusi tepat kehilangan dan penemuan barang!</p>
@@ -207,7 +207,7 @@
     <div class="modal-dialog form-dark" role="document">
       <!--Content-->
       {{-- {{ csrf_field() }} --}}
-      <div class="modal-content card card-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:400px; height:auto">
+      <div class="modal-content card card-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('img/bg-form-signup.jpg'); background-size:cover; background-repeat:no-repeat; width:auto; height:auto">
         <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
             <div class="row">
                 <div class="col-md-12">
@@ -234,7 +234,7 @@
                             <a class="green-text font-weight-bold" style="color:green;"><strong> UP</strong></a>
                           </h3>
                           <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true" style="color:white">&times;</span>
                           </button>
                         </div>
                         <!--Body-->
@@ -279,16 +279,6 @@
                           </div>
                           <!--Grid row-->
                           </form>
-                          <!--Grid row-->
-                          <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                              <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#tab_2" data-toggle="tab" class="green-text ml-1 font-weight-bold">
-                                Log in</a></p>
-                            </div>
-                            <!--Grid column-->
-                          </div>
-                          <!--Grid row-->
                         </div>
                       </div>
                       <!-- /.tab-pane -->
@@ -300,7 +290,7 @@
                               <a class="green-text font-weight-bold" style="color:green;"><strong> IN</strong></a>
                             </h3>
                             <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
+                              <span aria-hidden="true" style="color:white" style="color:white">&times;</span>
                             </button>
                           </div>
                           <!--Body-->
@@ -331,16 +321,6 @@
                             </div>
                             <!--Grid row-->
                             </form>
-                            <!--Grid row-->
-                            <div class="row">
-                              <!--Grid column-->
-                              <div class="col-md-12">
-                                <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a href="#tab_1" data-toggle="tab" class="green-text ml-1 font-weight-bold">
-                                    Sign up</a></p>
-                              </div>
-                              <!--Grid column-->
-                            </div>
-                            <!--Grid row-->
                           </div>
                       </div>
                     </div>

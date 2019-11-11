@@ -5,7 +5,7 @@
     @include('layout.head')
 
   </head>
-  <body class="skin-purple sidebar-mini">
+  <body class="hold-transition skin-purple sidebar-mini">
     <div class="wrapper">
 
       @include('layout.header')
