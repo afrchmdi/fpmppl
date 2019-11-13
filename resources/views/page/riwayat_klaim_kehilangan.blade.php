@@ -10,7 +10,7 @@ Dashboard
   <div class="col-xs-12">
     <div class="box">
       <div class="box-header">
-        <h3>Riwayat Akun - <b>Klaim KeTemuanan</b></h3>
+        <h3>Riwayat Akun - <b>Klaim Kehilangan</b></h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -987,5 +987,5 @@ Dashboard
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
   };
-  </script>
+</script>
 @endsection

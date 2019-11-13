@@ -51,8 +51,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-calendar-check-o"></i>Temuan</a></li>
-            <li><a href="#"><i class="fa fa-calendar-times-o"></i>Hilang</a></li>
+            <li><a href="/barang.temuan"><i class="fa fa-calendar-check-o"></i>Temuan</a></li>
+            <li><a href="/barang.hilang"><i class="fa fa-calendar-times-o"></i>Hilang</a></li>
           </ul>
         </li>
         <li class="treeview">

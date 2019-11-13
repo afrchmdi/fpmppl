@@ -2,7 +2,7 @@
 
 @section('content-header')
 Dashboard
-<small>{{Auth::user()->nama}}</small>
+{{-- <small>{{Auth::user()->nama}}</small> --}}
 @endsection
 
 @section('content')
@@ -49,7 +49,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-mobile-phone"></i>
       </div>
-      <a href="#" class="small-box-footer">Daftar Barang Temuan  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/barang.temuan" class="small-box-footer">Daftar Barang Temuan  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <div class="col-lg-6 col-xs-6">
@@ -62,7 +62,7 @@ Dashboard
       <div class="icon">
         <i class="fa fa-briefcase"></i>
       </div>
-      <a href="#" class="small-box-footer">Daftar Barang Hilang  <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="/barang.hilang" class="small-box-footer">Daftar Barang Hilang  <i class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
 </div>
