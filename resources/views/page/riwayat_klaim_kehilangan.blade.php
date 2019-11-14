@@ -22,7 +22,7 @@ Dashboard
             <th>Lokasi</th>
             <th>Waktu</th>
             <th>Kategori</th>
-            <th>Validasi</th>
+            <th>Info</th>
             <th>Klaim</th>
           </tr>
           </thead>
@@ -35,9 +35,11 @@ Dashboard
             </td>
             <td>Win 95+</td>
             <td> 4</td>
-            <td>X</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -50,9 +52,11 @@ Dashboard
             </td>
             <td>Win 95+</td>
             <td>5</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -65,9 +69,11 @@ Dashboard
             </td>
             <td>Win 95+</td>
             <td>5.5</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -80,9 +86,11 @@ Dashboard
             </td>
             <td>Win 98+</td>
             <td>6</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -93,9 +101,11 @@ Dashboard
             <td>Internet Explorer 7</td>
             <td>Win XP SP2+</td>
             <td>7</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -106,9 +116,11 @@ Dashboard
             <td>AOL browser (AOL desktop)</td>
             <td>Win XP</td>
             <td>6</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -119,9 +131,11 @@ Dashboard
             <td>Firefox 1.0</td>
             <td>Win 98+ / OSX.2+</td>
             <td>1.7</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -132,9 +146,11 @@ Dashboard
             <td>Firefox 1.5</td>
             <td>Win 98+ / OSX.2+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -145,9 +161,11 @@ Dashboard
             <td>Firefox 2.0</td>
             <td>Win 98+ / OSX.2+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -158,9 +176,11 @@ Dashboard
             <td>Firefox 3.0</td>
             <td>Win 2k+ / OSX.3+</td>
             <td>1.9</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -171,9 +191,11 @@ Dashboard
             <td>Camino 1.0</td>
             <td>OSX.2+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -184,9 +206,11 @@ Dashboard
             <td>Camino 1.5</td>
             <td>OSX.3+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -197,9 +221,11 @@ Dashboard
             <td>Netscape 7.2</td>
             <td>Win 95+ / Mac OS 8.6-9.2</td>
             <td>1.7</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -210,9 +236,11 @@ Dashboard
             <td>Netscape Browser 8</td>
             <td>Win 98SE+</td>
             <td>1.7</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -223,9 +251,11 @@ Dashboard
             <td>Netscape Navigator 9</td>
             <td>Win 98+ / OSX.2+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -236,9 +266,11 @@ Dashboard
             <td>Mozilla 1.0</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -249,9 +281,11 @@ Dashboard
             <td>Mozilla 1.1</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1.1</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -262,9 +296,11 @@ Dashboard
             <td>Mozilla 1.2</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1.2</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -275,9 +311,11 @@ Dashboard
             <td>Mozilla 1.3</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1.3</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -288,9 +326,11 @@ Dashboard
             <td>Mozilla 1.4</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1.4</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -301,9 +341,11 @@ Dashboard
             <td>Mozilla 1.5</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1.5</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -314,9 +356,11 @@ Dashboard
             <td>Mozilla 1.6</td>
             <td>Win 95+ / OSX.1+</td>
             <td>1.6</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -327,9 +371,11 @@ Dashboard
             <td>Mozilla 1.7</td>
             <td>Win 98+ / OSX.1+</td>
             <td>1.7</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -340,9 +386,11 @@ Dashboard
             <td>Mozilla 1.8</td>
             <td>Win 98+ / OSX.1+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -353,9 +401,11 @@ Dashboard
             <td>Seamonkey 1.1</td>
             <td>Win 98+ / OSX.2+</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -366,9 +416,11 @@ Dashboard
             <td>Epiphany 2.20</td>
             <td>Gnome</td>
             <td>1.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -379,9 +431,11 @@ Dashboard
             <td>Safari 1.2</td>
             <td>OSX.3</td>
             <td>125.5</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -392,9 +446,11 @@ Dashboard
             <td>Safari 1.3</td>
             <td>OSX.3</td>
             <td>312.8</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -405,9 +461,11 @@ Dashboard
             <td>Safari 2.0</td>
             <td>OSX.4+</td>
             <td>419.3</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -418,9 +476,11 @@ Dashboard
             <td>Safari 3.0</td>
             <td>OSX.4+</td>
             <td>522.1</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -431,9 +491,11 @@ Dashboard
             <td>OmniWeb 5.5</td>
             <td>OSX.4+</td>
             <td>420</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -444,9 +506,11 @@ Dashboard
             <td>iPod Touch / iPhone</td>
             <td>iPod</td>
             <td>420.1</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -457,9 +521,11 @@ Dashboard
             <td>S60</td>
             <td>S60</td>
             <td>413</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -470,9 +536,11 @@ Dashboard
             <td>Opera 7.0</td>
             <td>Win 95+ / OSX.1+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -483,9 +551,11 @@ Dashboard
             <td>Opera 7.5</td>
             <td>Win 95+ / OSX.2+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -496,9 +566,11 @@ Dashboard
             <td>Opera 8.0</td>
             <td>Win 95+ / OSX.2+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -509,9 +581,11 @@ Dashboard
             <td>Opera 8.5</td>
             <td>Win 95+ / OSX.2+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -522,9 +596,11 @@ Dashboard
             <td>Opera 9.0</td>
             <td>Win 95+ / OSX.3+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -535,9 +611,11 @@ Dashboard
             <td>Opera 9.2</td>
             <td>Win 88+ / OSX.3+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -548,9 +626,11 @@ Dashboard
             <td>Opera 9.5</td>
             <td>Win 88+ / OSX.3+</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -561,9 +641,11 @@ Dashboard
             <td>Opera for Wii</td>
             <td>Wii</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -574,9 +656,11 @@ Dashboard
             <td>Nokia N800</td>
             <td>N800</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -587,9 +671,11 @@ Dashboard
             <td>Nintendo DS browser</td>
             <td>Nintendo DS</td>
             <td>8.5</td>
-            <td>C/A<sup>1</sup></td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>up></td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -600,9 +686,11 @@ Dashboard
             <td>Konqureror 3.1</td>
             <td>KDE 3.1</td>
             <td>3.1</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -613,9 +701,11 @@ Dashboard
             <td>Konqureror 3.3</td>
             <td>KDE 3.3</td>
             <td>3.3</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -626,9 +716,11 @@ Dashboard
             <td>Konqureror 3.5</td>
             <td>KDE 3.5</td>
             <td>3.5</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -639,9 +731,11 @@ Dashboard
             <td>Internet Explorer 4.5</td>
             <td>Mac OS 8-9</td>
             <td>-</td>
-            <td>X</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -652,9 +746,11 @@ Dashboard
             <td>Internet Explorer 5.1</td>
             <td>Mac OS 7.6-9</td>
             <td>1</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -665,9 +761,11 @@ Dashboard
             <td>Internet Explorer 5.2</td>
             <td>Mac OS 8-X</td>
             <td>1</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -678,9 +776,11 @@ Dashboard
             <td>NetFront 3.1</td>
             <td>Embedded devices</td>
             <td>-</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -691,9 +791,11 @@ Dashboard
             <td>NetFront 3.4</td>
             <td>Embedded devices</td>
             <td>-</td>
-            <td>A</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -704,9 +806,11 @@ Dashboard
             <td>Dillo 0.8</td>
             <td>Embedded devices</td>
             <td>-</td>
-            <td>X</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -717,9 +821,11 @@ Dashboard
             <td>Links</td>
             <td>Text only</td>
             <td>-</td>
-            <td>X</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -730,9 +836,11 @@ Dashboard
             <td>Lynx</td>
             <td>Text only</td>
             <td>-</td>
-            <td>X</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -743,9 +851,11 @@ Dashboard
             <td>IE Mobile</td>
             <td>Windows Mobile 6</td>
             <td>-</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -756,9 +866,11 @@ Dashboard
             <td>PSP browser</td>
             <td>PSP</td>
             <td>-</td>
-            <td>C</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -769,9 +881,11 @@ Dashboard
             <td>All others</td>
             <td>-</td>
             <td>-</td>
-            <td>U</td>
             <td class="row">
-              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
+              <a class="col-sm-12" href="#"><button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-default">Barang</button></a>
+            </td>
+            <td class="row">
+              <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default4">Lihat</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Edit</button></a>
               <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-warning"  data-toggle="modal" data-target="#modal-default3">Batal</button></a>
             </td>
@@ -784,7 +898,7 @@ Dashboard
             <th>Lokasi</th>
             <th>Waktu</th>
             <th>Kategori</th>
-            <th>Validasi</th>
+            <th>Info</th>
             <th>Klaim</th>
           </tr>
           </tfoot>
@@ -828,6 +942,7 @@ Dashboard
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Informasi Barang Temuan</h4>
+        <p class="help-block" style="margin:0">Update terakhir 11/11/2019 23:11</p>
       </div>
       <div class="modal-body">
         <div class="row">
@@ -932,7 +1047,7 @@ Dashboard
           <br>
           <div class="row justify-content-center">
             {{-- gambar landscape --}}
-            <div class="col-xs-12"><img id="image" src="/img/foto_klaim.png" style="width:inherit; height:inherit" alt=""></div>
+            <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
             {{-- gambar potrait --}}
             {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
           </div>
@@ -967,6 +1082,53 @@ Dashboard
         <a href="/riwayat.klaim.kehilangan">
           <button type="button" class="btn btn-success">Yakin</button>
         </a>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal fade" id="modal-default4">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Informasi Klaim Kehilangan Barang Temuan</h4>
+        <p class="help-block" style="margin:0">Update terakhir 12/12/2019 00:59</p>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-deskripsi">Deskripsi Klaim Penemuan</label></div>
+          <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+          <div class="col-sm-7">Contoh Klaim Kehilangan Barang Temuan Kehilangan Barang Temuan Kehilangan Barang Temuan Kehilangan Barang Temuan  Barang Klaim Kehilangan Barang Temuan Kehilangan Barang Temuan Kehilangan Barang Temuan</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-foto">Bukti Foto Klaim</label></div>
+          <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+          <div class="col-sm-4">
+            {{-- gambar landscape --}}
+            <a href="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" target="_blank">
+              <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
+            </a>
+            {{-- gambar potrait --}}
+            {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
+              <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
+            </a> --}}
+          </div>
+        </div>    
+        <br>
+        <div class="row justify-content-center">
+          {{-- gambar landscape --}}
+          <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
+          {{-- gambar potrait --}}
+          {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Tutup</button>
       </div>
     </div>
     <!-- /.modal-content -->
