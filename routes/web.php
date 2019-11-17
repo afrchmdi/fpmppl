@@ -35,9 +35,9 @@ Route::get('/temuan', 'ViewController@temuan');
 Route::get('/riwayat.postingan.penemuan', function () {
     return view('page.riwayat_postingan_penemuan');
 });
-Route::get('/riwayat.postingan.kehilangan', function () {
-    return view('page.riwayat_postingan_kehilangan');
-});
+Route::get('/riwayat.postingan.kehilangan', 'UserController@postkehilangan');
+Route::post('/post.kehilangan', 'UserController@post')->name('posthilang');
+Route::post('/edit.kehilangan', 'UserController@edit')->name('editposthilang');
 Route::get('/riwayat.klaim.penemuan', function () {
     return view('page.riwayat_klaim_penemuan');
 });
@@ -62,3 +62,7 @@ Route::get('/ruang.email', function () {
 Route::get('/manajemen.akun', function () {
     return view('page.manajamen_akun');
 });
+
+Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
+Route::get('/editposthilang', 'UserController@showposthilang')->name('edithilang');
+Route::get('/show-post-temu', 'UserController@showposttemu')->name('showposttemu');

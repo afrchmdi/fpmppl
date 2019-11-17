@@ -26,9 +26,9 @@ class CreateUsersTable extends Migration
             $table->string('username');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('no_identitas', 18);
-            $table->string('alamat', 30);
-            $table->string('nohp', 12);
+            $table->string('no_identitas', 18)->nullable();
+            $table->string('alamat', 30)->nullable();
+            $table->string('nohp', 12)->nullable();
             // AKTOR
             // 1 : admin
             // 2 : user
