@@ -83,9 +83,6 @@ $(function () {
   $('#datepicker').datepicker({
   autoclose: true
   })
-  $('#datepicker2').datepicker({
-  autoclose: true
-  })
 })
 </script>
 
@@ -96,6 +93,7 @@ $(function () {
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Informasi Barang Hilang</h4>
+        <p class="help-block" style="margin:0">Update terakhir 11/11/2019 23:11</p>
       </div>
       <div class="modal-body">
         <div class="row">
