@@ -725,12 +725,13 @@ Dashboard
             <tfoot>
             <tr>
                 <th>Nama Barang</th>
+                <th>Nama Penemu</th>
                 <th>Lokasi</th>
                 <th>Waktu</th>
                 <th>Kategori</th>
                 <th>Validasi</th>
                 <th>Aksi</th>
-              </tr>
+            </tr>
             </tfoot>
           </table>
         </div>
