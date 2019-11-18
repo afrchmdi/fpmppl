@@ -1059,7 +1059,7 @@ Dashboard
         <h4 class="modal-title">Penerimaan Klaim Penemuan Barang Hilang</h4>
       </div>
       <div class="modal-body">
-        <p>Apakah kamu yakin menerima klaim penemuan barang hilang ini?</p>
+        <p>Apakah kamu yakin <b>menerima</b> klaim penemuan barang hilang ini?</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Tidak</button>
@@ -1083,7 +1083,7 @@ Dashboard
         <h4 class="modal-title">Penolakan Klaim Penemuan Barang Hilang</h4>
       </div>
       <div class="modal-body">
-        <p>Apakah kamu yakin menolak klaim penemuan barang hilang ini?</p>
+        <p>Apakah kamu yakin <b>menolak</b> klaim penemuan barang hilang ini?</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Tidak</button>
