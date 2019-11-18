@@ -62,6 +62,12 @@ Route::get('/ruang.email', function () {
 Route::get('/manajemen.akun', function () {
     return view('page.manajamen_akun');
 });
+Route::get('/profil', function() {
+    return view('page.profil');
+});
+Route::get('/edit.profil', function() {
+    return view('page.edit_profil');
+});
 
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
 Route::get('/editposthilang', 'UserController@showposthilang')->name('edithilang');
