@@ -68,6 +68,9 @@ Route::get('/profil', function() {
 Route::get('/edit.profil', function() {
     return view('page.edit_profil');
 });
+Route::get('/edit.password', function() {
+    return view('page.edit_password');
+});
 
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
 Route::get('/editposthilang', 'UserController@showposthilang')->name('edithilang');

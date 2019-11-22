@@ -58,12 +58,6 @@ Profil
             <p>0899656871223</p>
         </div>
     </div>
-    {{-- <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Retype Password</label>
-    <div class="col-sm-8">
-        <input type="password" class="form-control" id="inputPassword2" value="Contoh Password">
-    </div>
-    </div> --}}
     <div class="col-sm-offset-4 col-sm-1">
         <a href="/edit.password">
             <button type="submit" class="btn btn-primary">Ubah Password</button>
