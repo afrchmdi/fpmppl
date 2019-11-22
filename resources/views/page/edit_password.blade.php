@@ -27,18 +27,20 @@ Edit Password
         <input type="password" class="form-control" id="inputPassword2">
     </div>
     </div>
+</form>
     <div class="row form-group">
         <div class="col-sm-offset-3 col-sm-1">
             <a href="/dashboard">
                 <button class="btn btn-warning">Batal</button>
             </a>
         </div>
+        <form class="form-horizontal">
         <div class="col-sm-1">
             <a href="/dashboard">
                 <button type="submit" class="btn btn-success">Simpan</button>
             </a>
         </div>
+        </form>
     </div>
-</form>
 </div>
 @endsection

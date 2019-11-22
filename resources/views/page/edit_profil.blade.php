@@ -56,19 +56,21 @@ Profil
         <input type="text" class="form-control" id="inputNoPhone" value="0899656871223">
     </div>
     </div>
+</form>
     <div class="row form-group">
         <div class="col-sm-offset-2 col-sm-1">
             <a href="/profil">
                 <button type="submit" class="btn btn-warning">Batal</button>
             </a>
         </div>
+        <form class="form-horizontal">
         <div class="col-sm-1">
             <a href="/profil">
                 <button type="submit" class="btn btn-success">Simpan</button>
             </a>
         </div>
+        </form>
     </div>
-</form>
 </div>
 @endsection
 

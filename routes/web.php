@@ -27,7 +27,7 @@ Route::get('logout', 'LoginController@logout')->name('logout');
 // Route::get('/home', 'ViewController@gethilang');
 // Route::get('/home', 'AdminController@index');
 
-Route::get('/dashboard', 'UserController@index');
+Route::get('/dashboard', 'UserController@index')->name('dashboard');
 Route::get('/admin', 'AdminController@index');
 Route::get('/temuan', 'ViewController@temuan');
 
