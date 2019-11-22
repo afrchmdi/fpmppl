@@ -30,7 +30,7 @@ class CreateBarangHilang extends Migration
             $table->date('waktu');
             $table->text('foto');
             $table->string('kategori', 20);
-            $table->boolean('validasi');
+            $table->boolean('validasi')->nullable();
             $table->integer('klaim');
             $table->timestamps();
         });
