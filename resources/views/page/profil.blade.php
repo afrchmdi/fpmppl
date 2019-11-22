@@ -64,7 +64,12 @@ Profil
         <input type="password" class="form-control" id="inputPassword2" value="Contoh Password">
     </div>
     </div> --}}
-    <div class="col-sm-offset-6 col-sm-8">
+    <div class="col-sm-offset-4 col-sm-1">
+        <a href="/edit.password">
+            <button type="submit" class="btn btn-primary">Ubah Password</button>
+        </a>
+    </div>
+    <div class="col-sm-offset-1 col-sm-1">
         <a href="/edit.profil">
             <button type="submit" class="btn btn-info">Edit</button>
         </a>

@@ -6,9 +6,20 @@ Profil
 @endsection
 
 @section('content')
-<h3>Data Diri</h3>
 <div class="container">
+<h3>Data Diri</h3>
 <form class="form-horizontal">
+    <div class="row justify-content-center">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><img class="img-circle" id="image" src="/img/team1.jpg" width="200dp" height="200dp" style="object-fit:cover" alt=""></div>
+        <div class="col-md-4"></div>
+    </div><br>
+    <div class="form-group">
+    <label class="col-sm-2 control-label" data-error="wrong" data-success="right" for="Form-foto">Foto Profil</label>
+    <div class="col-sm-8">
+        <input type="file" id="Form-foto" style="padding-top:7px">
+    </div>
+    </div> 
     <div class="form-group">
     <label for="inputName" class="col-sm-2 control-label">Nama</label>
     <div class="col-sm-8">
@@ -45,30 +56,34 @@ Profil
         <input type="text" class="form-control" id="inputNoPhone" value="0899656871223">
     </div>
     </div>
-    <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-8">
-        <input type="password" class="form-control" id="inputPassword" value="Contoh Password">
-    </div>
-    </div>
-    {{-- <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Retype Password</label>
-    <div class="col-sm-8">
-        <input type="password" class="form-control" id="inputPassword2" value="Contoh Password">
-    </div>
-    </div> --}}
     <div class="row form-group">
         <div class="col-sm-offset-2 col-sm-1">
-            <a href="">
+            <a href="/profil">
                 <button type="submit" class="btn btn-warning">Batal</button>
             </a>
         </div>
         <div class="col-sm-1">
-            <a href="">
+            <a href="/profil">
                 <button type="submit" class="btn btn-success">Simpan</button>
             </a>
         </div>
     </div>
 </form>
 </div>
+@endsection
+
+@section('morejs')
+<script>
+    document.getElementById("Form-foto").onchange = function () {
+        var reader = new FileReader();
+    
+        reader.onload = function (e) {
+            // get loaded data and render thumbnail.
+            document.getElementById("image").src = e.target.result;
+        };
+    
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+    };
+</script>    
 @endsection
