@@ -31,28 +31,41 @@ Route::get('/dashboard', 'UserController@index')->name('dashboard');
 Route::get('/admin', 'AdminController@index');
 Route::get('/temuan', 'ViewController@temuan');
 
-// mentah
+
 Route::get('/riwayat.postingan.penemuan', function () {
     return view('page.riwayat_postingan_penemuan');
 });
+
+// riwayat postingan kehilangan
 Route::get('/riwayat.postingan.kehilangan', 'UserController@postkehilangan');
 Route::post('/post.kehilangan', 'UserController@post')->name('posthilang');
-Route::post('/edit.kehilangan', 'UserController@edit')->name('editposthilang');
+Route::post('/edit.kehilangan/{id}', 'UserController@edit')->name('editposthilang');
+
 Route::get('/riwayat.klaim.penemuan', function () {
     return view('page.riwayat_klaim_penemuan');
 });
-Route::get('/riwayat.klaim.kehilangan', function () {
-    return view('page.riwayat_klaim_kehilangan');
-});
-Route::get('/barang.temuan', function () {
-    return view('page.barang_temuan');
-});
-Route::get('/barang.hilang', function () {
-    return view('page.barang_hilang');
-});
-Route::get('/laporan.klaim.penemuan', function () {
-    return view('page.laporan_klaim_penemuan');
-});
+
+// riwayat klaim kehilangan
+Route::get('/riwayat.klaim.kehilangan', 'UserController@klaimkehilangan');
+
+//  barang temuan
+Route::get('/barang.temuan', 'TemuController@temuan');
+
+// get klaim barang hilang
+Route::post('/klaimhilang/{id}', 'CariController@postklaimhilang')->name('klaimhilang');
+
+// barang hilang
+Route::get('/barang.hilang', 'CariController@hilang');
+
+// laporan klaim penemuan
+Route::get('/laporan.klaim.penemuan', 'CariController@laporanklaim');
+
+// show klaim di halaman laporanklaimpenemuan
+Route::get('/showklaim', 'CariController@showklaim')->name('showklaim');
+
+// validasi penemuan 
+Route::post('/validasipenemuanterima/{id}', 'CariController@validasiterima')->name('validasipenemuanterima');
+
 Route::get('/laporan.klaim.kehilangan', function () {
     return view('page.laporan_klaim_kehilangan');
 });
@@ -76,5 +89,5 @@ Route::get('/manajemen.akun', function() {
 });
 
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
-Route::get('/editposthilang', 'UserController@showposthilang')->name('edithilang');
+Route::get('/edit-post-hilang', 'UserController@showposthilang')->name('edithilang');
 Route::get('/show-post-temu', 'UserController@showposttemu')->name('showposttemu');

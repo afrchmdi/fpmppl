@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\BarangHilang;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
@@ -14,12 +15,33 @@ class UserController extends Controller
     }
 
     public function postkehilangan(){
-        $datas = DB::table('barang_hilang')
+        $user = DB::table('barang_hilang')
+            ->where('id_pencari', '=', Auth::user()->id)
+            ->distinct()
+            ->get();
+        if($user->has('id')){
+            dd($user);
+        }
+        else{
+            $user->id =  Auth::user()->id;
+            $user->nama_barang = NULL;
+            $user->lokasi = NULL;
+            $user->waktu = NULL;
+            $user->kategori = NULL;
+            $user->validasi = NULL;
+        }
+        // dd($user);
+        return view('page.riwayat_postingan_kehilangan', ['user' => $user]);
+    }
+
+    public function klaimkehilangan(){
+        $user = DB::table('barang_temuan')
+            ->where('id_penemu', '!=', Auth::user()->id)
             ->distinct()
             ->get();
             // dd($datas);
 
-        return view('page.riwayat_postingan_kehilangan', ['datas' => $datas]);
+        return view('page.riwayat_klaim_kehilangan', ['user' => $user]);
     }
 
     public function showposthilang(Request $request){
@@ -36,7 +58,7 @@ class UserController extends Controller
                 'waktu' => $what->waktu,
                 'kategori' => $what->kategori,
                 'validasi' => $what->validasi,
-                'foto' => $what->foto
+                'foto' => "{{ URL::asset('uploads/kehilangan/".$what->foto."') }}"
             ];
 
             return response()->json($values);
@@ -57,39 +79,54 @@ class UserController extends Controller
         $post->validasi = 0;
         $post->klaim = 0;
 
-        $file = $request->file('Form-foto');
-        if ($file){
+        $file = $request->file('foto');
+        // dd($file);
+        
+        if ($request->hasFile('foto')){
+            // dd($file);
             $file->getClientOriginalName();
             $file->getClientOriginalExtension();
             $file->getRealPath();
             $file->getSize();
             $file->getMimeType();
-            $filename = 'foto-kehilangan-' . Auth::user()->id . '_' .'.jpg';
+            $filename = 'foto-kehilangan-' . Auth::user()->id . '.jpg';
             
             $destinationPath = 'uploads/kehilangan';
             $file->move($destinationPath, $filename);
         }
-        else{
-            $filename = "error";
-        }
+
         $post->foto = $filename;
         $post->save();
         // dd($post);
-
+        return redirect()->back();
     }
 
-    public function edit(Request $request){
-        $id = $request('id');
+    public function edit(Request $request, $id){
+        // $id = $request('id');
+        // $id = $request->id;
+        // dd($id);
+        // -----------------------------------
+        // $hilang = new BarangHilang();
+        // $data = $hilang->get($id);
+        
+        // $data->nama_barang = $request->input('namabarang');
+        // $data->lokasi = $request->input('lokasi');
+        // $data->deskripsi = $request->input('deskripsi');
+        // // $data->waktu = $request->input('waktu');
+        // $data->kategori = $request->input('kategori');
+        // dd($data);
+        // dd($request->input('waktu'));
 
-        $hilang = new BarangHilang();
-        $data = $hilang->get($id);
-
-        $data->nama_barang = $request->input('namabarang');
-        $data->lokasi = $request->input('lokasi');
-        $data->deskripsi = $request->input('waktu');
-        $data->kategori = $request->input('kategori');
-
-        $data->save();
+        $data = BarangHilang::where('id', $id)->first()
+                ->update([
+                    'nama_barang' => $request->input('namabarang'),
+                    'lokasi' => $request->input('lokasi'),
+                    'deskripsi' => $request->input('deskripsi'),
+                    // 'waktu' => $request->input('waktu'),
+                    'kategori' => $request->input('kategori'),
+                ]);
+        
+        // $data->save();
 
         return redirect()->back();
     }

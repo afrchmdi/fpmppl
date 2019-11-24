@@ -12,7 +12,9 @@ Dashboard
       <div class="box-header">
         <div class="col-xs-6"><h3>Riwayat Akun - <b>Postingan Kehilangan</b></h3></div>
         <div class="col-xs-3"></div>
-        <div class="col-xs-3"><a href="#"><button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-post">Post Barang Hilang</button></a></div>
+        <div class="col-xs-3">
+          <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-post">Post Barang Hilang</button>
+        </div>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -28,21 +30,46 @@ Dashboard
           </tr>
           </thead>
           <tbody>
-            @foreach($datas as $key=>$user)
+            @if($user != NULL)
+            {{-- @foreach($datas as $key=>$user) --}}
+            @foreach($user as $user)
               <tr>
                 <td>{{$user->nama_barang}}</td>
                 <td>{{$user->lokasi}}</td>
                 <td>{{$user->waktu}}</td>
                 <td>{{$user->kategori}}</td>
-                <td>@if($user->validasi == 1)Diterima @else Ditolak @endif</td>
+                <td>@if($user->validasi == 1)Diterima @elseif($user->validasi == 0) Belum divalidasi @elseif($user->validasi == 2) Ditolak @endif</td>
                 <td class="row">
-                  <button type="button" class="btn btn-block btn-primary js-show-modal" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-show">Lihat</button>
-                  @if($user->validasi != 1)
-                  <button type="button" class="btn btn-block btn-info js-show-edit" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-edit">Edit</button>
-                  @endif
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">
+                      <button type="button" class="btn btn-block btn-primary js-show-modal" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-show">Lihat</button>
+                    </div>
+                    <div class="col-xs-6">
+                      @if($user->validasi != 1)
+                      <button type="button" class="btn btn-block btn-info js-show-edit" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-edit">Edit</button>
+                      @endif
+                    </div>
+                  </div>
                 </td>
               </tr>
             @endforeach
+            @else
+            <tr>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+            @endif
+
           </tbody>
           <tfoot>
           <tr>
@@ -93,7 +120,7 @@ $(function () {
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Informasi Barang Hilang</h4>
-        <p class="help-block" style="margin:0">Update terakhir 11/11/2019 23:11</p>
+        {{-- <p class="help-block" style="margin:0">Update terakhir 11/11/2019 23:11</p> --}}
       </div>
       <div class="modal-body">
         <div class="row">
@@ -131,7 +158,9 @@ $(function () {
           <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
           <div class="col-sm-4">
             {{-- gambar landscape --}}
-            <a href="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" target="_blank">
+            {{-- <a href="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" target="_blank"> --}}
+            <a  src="" target="_blank" >
+
               <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
             </a>
             {{-- gambar potrait --}}
@@ -143,7 +172,9 @@ $(function () {
         <br>
         <div class="row justify-content-center">
           {{-- gambar landscape --}}
-          <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:inherit; height:inherit" alt=""></div>
+          <div class="col-xs-12">
+            <img class="js-show-foto" src="" style="width:inherit; height:inherit" alt="">
+          </div>
           {{-- gambar potrait --}}
           {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
         </div>
@@ -156,9 +187,10 @@ $(function () {
   </div>
   <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
 
-<form method="POST" class="form-horizontal" id="js-modal-edit" action="{{ route('editposthilang')}}">
+
+<!-- /.modal -->
+<form method="POST" class="form-horizontal" enctype="multipart/form-data" id="js-modal-edit" action="{{ route('editposthilang', $user->id)}}">
     {{ csrf_field() }}
 <div class="modal fade" id="modal-edit">
   <div class="modal-dialog">
@@ -172,18 +204,18 @@ $(function () {
           <div class="row">
             <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-namabarang">Nama Barang</label></div>
             <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-            <div class="col-sm-7"><input type="text" id="Form-namabarang" class="form-control validate white-text" value=""></div>
+          <div class="col-sm-7"><input type="text" name="namabarang" id="Form-namabarang" class="form-control validate white-text" value="{{old('namabarang')}}"></div>
           </div>
           <div class="row">
             <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-lokasi">Lokasi Hilang</label></div>
             <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-            <div class="col-sm-7"><input type="text" id="Form-lokasi" class="form-control validate white-text" value=""></div>
+          <div class="col-sm-7"><input type="text" name="lokasi" id="Form-lokasi" class="form-control validate white-text" value="{{old('lokasi')}}"></div>
           </div>
           <div class="row">
             <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-deskripsi">Deskripsi Barang</label></div>
             <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
             <div class="col-sm-7">
-              <textarea name="deskripsi" class="form-control validate white-text" id="Form-deskripsi" rows="10">
+            <textarea name="deskripsi" class="form-control validate white-text" id="Form-deskripsi" rows="10" value="{{old('deskripsi')}}">
                 Contoh Deskripsi Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang  Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang
               </textarea>
               {{-- <input type="text-area" id="Form-deskripsi" class="form-control validate white-text" value="Contoh Deskripsi Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang  Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang"> --}}
@@ -197,7 +229,7 @@ $(function () {
                 <div class="input-group-addon">
                   <i class="fa fa-calendar"></i>
                 </div>
-                <input type="text" class="form-control pull-right" id="datepicker Form-waktu" value="">
+              <input type="date" name="waktu" class="form-control pull-right" id="datepicker Form-waktu" value="{{old('waktu')}}" placeholder="{{old('waktu')}}">
               </div>
               <!-- /.input group -->
               {{-- <input type="date" id="Form-waktu" class="form-control validate white-text" value="2019-01-23"> --}}
@@ -207,21 +239,20 @@ $(function () {
             <div class="col-sm-4"><p style="font-weight:700">Kategori</p></div>
             <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
             <div class="col-sm-7">
-              <select class="form-control">
-                <option value="" selected id="Form-kategori"></option>
-                <option value="1">Kategori 1</option>
-                <option value="2">Kategori 2</option>
-                <option value="3">Kategori 3</option>
-                <option value="4">Kategori 4</option>
+              <select class="form-control" name="kategori">
+                <option value="1" @if($user->kategori == 1) selected @endif>Kategori 1</option>
+                <option value="2" @if($user->kategori == 2) selected @endif>Kategori 2</option>
+                <option value="3" @if($user->kategori == 3) selected @endif>Kategori 3</option>
+                <option value="4" @if($user->kategori == 4) selected @endif>Kategori 4</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-foto">Foto Barang</label></div>
+            <div class="col-sm-4"><label data-error="wrong" data-success="right" for="foto">Foto Barang</label></div>
             <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
             <div class="col-sm-4">
               {{-- gambar landscape --}}
-              <input type="file" id="Form-foto" name="Form-foto">
+              <input type="file" id="foto" name="foto">
               {{-- gambar potrait --}}
               {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -239,7 +270,7 @@ $(function () {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
-          <button type="submit" class="btn btn-success">Simpan</button>
+        <button type="submit" class="btn btn-success">Simpan</button>
       </div>
     </div>
     <!-- /.modal-content -->
@@ -248,7 +279,8 @@ $(function () {
 </div>
 <!-- /.modal -->
 
-<form method="POST" class="form-horizontal" id="js-modal-pass" action="{{ route('posthilang')}}">
+<!-- Modal -->
+<form method="POST" class="form-horizontal" enctype="multipart/form-data" id="js-modal-pass" action="{{ route('posthilang')}}">
   {{ csrf_field() }}
 <div class="modal fade" id="modal-post">
     <div class="modal-dialog">
@@ -285,10 +317,8 @@ $(function () {
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="date" class="form-control pull-right" id="datepicker2 Form-waktu" name="Form-waktu">
+                  <input type="date" class="form-control pull-right" id="datepicker Form-waktu" name="Form-waktu">
                 </div>
-                <!-- /.input group -->
-                {{-- <input type="date" id="Form-waktu" class="form-control validate white-text" value="2019-01-23"> --}}
               </div>
             </div>
             <div class="row">
@@ -304,11 +334,12 @@ $(function () {
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-foto">Foto Barang</label></div>
+              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="foto">Foto Barang</label></div>
               <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
               <div class="col-sm-4">
                 {{-- gambar landscape --}}
-                <input type="file" id="Form-foto" name="Form-foto">
+                {{-- <input type="file" id="foto" name="foto" class="foto"> --}}
+                <input name="foto" type="file" class="form-control" id="foto">
                 {{-- gambar potrait --}}
                 {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                   <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -338,7 +369,9 @@ $(function () {
 
 {{-- tampilkan foto terbaru yang diupload --}}
 <script>
-document.getElementById("Form-foto").onchange = function () {
+// document.getElementById("foto").onchange = function () {
+$(document).on("change", "#foto", function () {
+  console.log("edit");
     var reader = new FileReader();
 
     reader.onload = function (e) {
@@ -348,9 +381,11 @@ document.getElementById("Form-foto").onchange = function () {
 
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
-};
+});
 
-document.getElementById("Form-foto").onchange = function () {
+// document.getElementById("foto").onchange = function () {
+$(document).on("change", "#foto", function () {
+  console.log("post");
     var reader = new FileReader();
 
     reader.onload = function (e) {
@@ -360,13 +395,13 @@ document.getElementById("Form-foto").onchange = function () {
 
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
-};
+});
 
  $(document).on("click", ".js-show-edit", function () {
     var id = $(this).data('id');
-    console.log(id);
+    // console.log(id);
     $.ajax({
-          url: 'editposthilang',
+          url: 'edit-post-hilang',
           method: 'get',
           data: {
             id: id,
@@ -381,15 +416,26 @@ document.getElementById("Form-foto").onchange = function () {
               var kategori = response.kategori;
               var validasi = response.validasi;
               var foto = response.foto;
-
+              console.log(waktu);
+              // console.log(date('dd/mm/YYYY',strtotime(waktu)));
               $("#Form-namabarang").val(namabarang);
               $("#Form-namabarang").text(namabarang);
               $("#Form-lokasi").val(lokasi);
               $("#Form-lokasi").text(lokasi);
               $("#Form-deskripsi").val(deskripsi);
               $("#Form-deskripsi").text(deskripsi);
-              $("#Form-waktu").val(waktu);
-              $("#Form-waktu").text(waktu);
+              // $("#Form-waktu").val(waktu);
+
+              // var t = waktu.split(/[-]/);
+
+              // // Apply each element to the Date function
+              // var d = new Date(Date.UTC(t[0], t[1]-1, t[2]));
+
+              // console.log(d);
+              // $("#Form-waktu").attr('placeholder', waktu);
+              // $("#Form-waktu").attr('value', waktu);
+              $("#Form-waktu").datepicker(waktu);
+              // $("#Form-waktu").text(waktu);
               if(kategori == 1){
                 $("#Form-kategori").val("Kategori 1");
                 $("#Form-kategori").text("Kategori 1");
@@ -421,7 +467,7 @@ document.getElementById("Form-foto").onchange = function () {
 
   $.ajax({
           url: 'showposthilang',
-          method: 'post',
+          method: 'get',
           data: {
             id: id,
             _token: '{{ csrf_token()}}'
@@ -435,16 +481,22 @@ document.getElementById("Form-foto").onchange = function () {
               var kategori = response.kategori;
               var validasi = response.validasi;
               var foto = response.foto;
-              // console.log(namabarang);
+              console.log(foto);
               $(".js-namabarang").text(namabarang);
               $(".js-lokasi").text(lokasi);
               $(".js-deskripsi").text(deskripsi);
               $(".js-waktu").text(waktu);
+              // var image_path="{{ URL::asset('upload/kehilangan/') }}";
+              // $(".js-show-foto").attr('src', foto);
+
               if(validasi == 0){
-                $(".js-validasi").text("Ditolak");
+                $(".js-validasi").text("Belum Divalidasi");
+              }
+              else if(validasi == 1){
+                $(".validasi").text("Diterima");
               }
               else{
-                $(".validasi").text("Diterima");
+                $(".validasi").text("Ditolak");
               }
               if(kategori == 1){
                 $(".js-kategori").text("Kategori 1");

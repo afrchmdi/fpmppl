@@ -4,13 +4,13 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBarangHilang extends Migration
+class CreateTableKlaim extends Migration
 {
     /**
      * Schema table name to migrate
      * @var string
      */
-    public $set_schema_table = 'barang_hilang';
+    public $set_schema_table = 'klaim';
     /**
      * Run the migrations.
      * @table barang_hilang
@@ -22,16 +22,15 @@ class CreateBarangHilang extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_barang', 20);
-            $table->integer('id_pencari');
-            $table->string('nama_pencari', 30);
-            $table->string('lokasi', 30);
+            $table->integer('id_barang');
+            $table->integer('id_klaim');
+            $table->string('nama_pengklaim');
+            // jenis :
+            // 1 = kehilangan
+            // 2 = penemuan
+            $table->string('jenis');
             $table->string('deskripsi');
-            $table->date('waktu');
-            $table->text('foto');
-            $table->string('kategori', 20);
-            $table->boolean('validasi')->nullable();
-            $table->integer('klaim');
+            $table->text('foto_bukti');
             $table->timestamps();
         });
     }
