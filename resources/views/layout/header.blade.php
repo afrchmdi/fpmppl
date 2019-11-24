@@ -31,7 +31,7 @@
             <li class="user-body">
               <div class="row">
                 <div class="col-xs-6 text-center">
-                  <a href="#/edit.password">Ubah Password</a>
+                  <a href="/edit.password">Ubah Password</a>
                 </div>
                 <!-- <div class="col-xs-4 text-center">
                   <a href="#">Sales</a>
