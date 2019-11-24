@@ -7,14 +7,30 @@ use Illuminate\Database\Migrations\Migration;
 class CreateTableKlaim extends Migration
 {
     /**
+     * Schema table name to migrate
+     * @var string
+     */
+    public $set_schema_table = 'klaim';
+    /**
      * Run the migrations.
+     * @table barang_hilang
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('table_klaim', function (Blueprint $table) {
+        if (Schema::hasTable($this->set_schema_table)) return;
+        Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('id_barang');
+            $table->integer('id_klaim');
+            $table->string('nama_pengklaim');
+            // jenis :
+            // 1 = kehilangan
+            // 2 = penemuan
+            $table->string('jenis');
+            $table->string('deskripsi');
+            $table->text('foto_bukti');
             $table->timestamps();
         });
     }
@@ -26,6 +42,6 @@ class CreateTableKlaim extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_klaim');
+        Schema::dropIfExists($this->set_schema_table);
     }
 }

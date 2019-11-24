@@ -490,10 +490,13 @@ $(document).on("change", "#foto", function () {
               // $(".js-show-foto").attr('src', foto);
 
               if(validasi == 0){
-                $(".js-validasi").text("Ditolak");
+                $(".js-validasi").text("Belum Divalidasi");
+              }
+              else if(validasi == 1){
+                $(".validasi").text("Diterima");
               }
               else{
-                $(".validasi").text("Diterima");
+                $(".validasi").text("Ditolak");
               }
               if(kategori == 1){
                 $(".js-kategori").text("Kategori 1");

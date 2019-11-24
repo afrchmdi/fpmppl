@@ -51,13 +51,21 @@ Route::get('/riwayat.klaim.kehilangan', 'UserController@klaimkehilangan');
 //  barang temuan
 Route::get('/barang.temuan', 'TemuController@temuan');
 
+// get klaim barang hilang
+Route::post('/klaimhilang/{id}', 'CariController@postklaimhilang')->name('klaimhilang');
 
-Route::get('/barang.hilang', function () {
-    return view('page.barang_hilang');
-});
-Route::get('/laporan.klaim.penemuan', function () {
-    return view('page.laporan_klaim_penemuan');
-});
+// barang hilang
+Route::get('/barang.hilang', 'CariController@hilang');
+
+// laporan klaim penemuan
+Route::get('/laporan.klaim.penemuan', 'CariController@laporanklaim');
+
+// show klaim di halaman laporanklaimpenemuan
+Route::get('/showklaim', 'CariController@showklaim')->name('showklaim');
+
+// validasi penemuan 
+Route::post('/validasipenemuanterima/{id}', 'CariController@validasiterima')->name('validasipenemuanterima');
+
 Route::get('/laporan.klaim.kehilangan', function () {
     return view('page.laporan_klaim_kehilangan');
 });
@@ -66,6 +74,15 @@ Route::get('/ruang.email', function () {
 });
 Route::get('/manajemen.akun', function () {
     return view('page.manajamen_akun');
+});
+Route::get('/profil', function() {
+    return view('page.profil');
+});
+Route::get('/edit.profil', function() {
+    return view('page.edit_profil');
+});
+Route::get('/edit.password', function() {
+    return view('page.edit_password');
 });
 
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');

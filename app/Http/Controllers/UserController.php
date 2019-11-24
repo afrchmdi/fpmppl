@@ -98,7 +98,7 @@ class UserController extends Controller
         $post->foto = $filename;
         $post->save();
         // dd($post);
-
+        return redirect()->back();
     }
 
     public function edit(Request $request, $id){

@@ -38,8 +38,8 @@ Dashboard
                 <td>{{$user->kategori}}</td>
                 <td> @if($user->validasi == 0) Belum divalidasi @elseif($user->validasi == 1) Diterima @elseif($user->validasi == 2) Ditolak @endif</td>
                 <td class="row">
-                <a class="col-sm-6" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-6" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Klaim</button></a>
+                <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button>
+                <button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Klaim</button>
                 </td>
             </tr>
             @endforeach
@@ -47,12 +47,13 @@ Dashboard
             <tfoot>
             <tr>
                 <th>Nama Barang</th>
+                <th>Nama Penemu</th>
                 <th>Lokasi</th>
                 <th>Waktu</th>
                 <th>Kategori</th>
                 <th>Validasi</th>
                 <th>Aksi</th>
-              </tr>
+            </tr>
             </tfoot>
           </table>
         </div>

@@ -11,6 +11,7 @@ class TemuController extends Controller
 {
     public function temuan(){
         $user = DB::table('barang_temuan')
+            ->where('validasi', '!=', 1)
             ->distinct()
             ->get();
 
