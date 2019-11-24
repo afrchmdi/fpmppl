@@ -16,3 +16,4 @@
 - [ ] laman bantuan di header dan about di home buat apa?
 - [ ] kasih modal penyambut? buat lihat barang hilang dan barang temuan dulu sebelum posting
 - [ ] yg belum dinamis: riwayat.postingan.penemuan, riwayat.klaim.penemuan, laporan.klaim.kehilangan, manejemen.akun
+- [ ] seleksi css dan js di head dan foot
