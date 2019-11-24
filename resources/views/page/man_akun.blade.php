@@ -12,7 +12,7 @@ Dashboard
       <div class="box-header">
         <div class="col-xs-6"><h3>Manajemen - <b>Akun Pengguna</b></h3></div>
         <div class="col-xs-3"></div>
-        <div class="col-xs-3"><a href="#"><button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-default4">Tambah User</button></a></div>
+        <div class="col-xs-3"><a href="#"><button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-add">Tambah User</button></a></div>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -39,8 +39,8 @@ Dashboard
                 <td> 4</td>
                 <td>X</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -54,8 +54,8 @@ Dashboard
                 <td>5</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -69,8 +69,8 @@ Dashboard
                 <td>5.5</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -84,8 +84,8 @@ Dashboard
                 <td>6</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -97,8 +97,8 @@ Dashboard
                 <td>7</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -110,8 +110,8 @@ Dashboard
                 <td>6</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -123,8 +123,8 @@ Dashboard
                 <td>1.7</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -136,8 +136,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -149,8 +149,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -162,8 +162,8 @@ Dashboard
                 <td>1.9</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -175,8 +175,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -188,8 +188,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -201,8 +201,8 @@ Dashboard
                 <td>1.7</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -214,8 +214,8 @@ Dashboard
                 <td>1.7</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -227,8 +227,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -240,8 +240,8 @@ Dashboard
                 <td>1</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -253,8 +253,8 @@ Dashboard
                 <td>1.1</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -266,8 +266,8 @@ Dashboard
                 <td>1.2</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -279,8 +279,8 @@ Dashboard
                 <td>1.3</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -292,8 +292,8 @@ Dashboard
                 <td>1.4</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -305,8 +305,8 @@ Dashboard
                 <td>1.5</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -318,8 +318,8 @@ Dashboard
                 <td>1.6</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -331,8 +331,8 @@ Dashboard
                 <td>1.7</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -344,8 +344,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -357,8 +357,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -370,8 +370,8 @@ Dashboard
                 <td>1.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -383,8 +383,8 @@ Dashboard
                 <td>125.5</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -396,8 +396,8 @@ Dashboard
                 <td>312.8</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -409,8 +409,8 @@ Dashboard
                 <td>419.3</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -422,8 +422,8 @@ Dashboard
                 <td>522.1</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -435,8 +435,8 @@ Dashboard
                 <td>420</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -448,8 +448,8 @@ Dashboard
                 <td>420.1</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -461,8 +461,8 @@ Dashboard
                 <td>413</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -474,8 +474,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -487,8 +487,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -500,8 +500,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -513,8 +513,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -526,8 +526,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -539,8 +539,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -552,8 +552,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -565,8 +565,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -578,8 +578,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -591,8 +591,8 @@ Dashboard
                 <td>8.5</td>
                 <td>C/A<sup>1</sup></td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -604,8 +604,8 @@ Dashboard
                 <td>3.1</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -617,8 +617,8 @@ Dashboard
                 <td>3.3</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -630,8 +630,8 @@ Dashboard
                 <td>3.5</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -643,8 +643,8 @@ Dashboard
                 <td>-</td>
                 <td>X</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -656,8 +656,8 @@ Dashboard
                 <td>1</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -669,8 +669,8 @@ Dashboard
                 <td>1</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -682,8 +682,8 @@ Dashboard
                 <td>-</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -695,8 +695,8 @@ Dashboard
                 <td>-</td>
                 <td>A</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -708,8 +708,8 @@ Dashboard
                 <td>-</td>
                 <td>X</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -721,8 +721,8 @@ Dashboard
                 <td>-</td>
                 <td>X</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -734,8 +734,8 @@ Dashboard
                 <td>-</td>
                 <td>X</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -747,8 +747,8 @@ Dashboard
                 <td>-</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -760,8 +760,8 @@ Dashboard
                 <td>-</td>
                 <td>C</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -773,8 +773,8 @@ Dashboard
                 <td>-</td>
                 <td>U</td>
                 <td class="row">
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-default">Lihat</button></a>
-                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-default2">Ubah</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-info">Lihat</button></a>
+                <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-info"  data-toggle="modal" data-target="#modal-edit">Ubah</button></a>
                 <a class="col-sm-4" href="#"><button type="button" class="btn btn-block btn-danger"  data-toggle="modal" data-target="#modal-hapus">Hapus</button></a>
                 </td>
             </tr>
@@ -814,7 +814,7 @@ Dashboard
   })
 </script>
 
-<div class="modal fade" id="modal-default">
+<div class="modal fade" id="modal-info">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -895,7 +895,7 @@ Dashboard
 </div>
 <!-- /.modal -->
 
-<div class="modal fade" id="modal-default2">
+<div class="modal fade" id="modal-edit">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -980,7 +980,7 @@ Dashboard
             <div class="row justify-content-center">
                 <div class="col-sm-4"></div>
                 {{-- gambar landscape --}}
-                <div class="col-sm-4"><img class="img-circle" id="image" src="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" width="200dp" height="200dp" style="object-fit:cover" alt=""></div>
+                <div class="col-sm-4"><img class="img-circle fa-user" id="image" src="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" width="200dp" height="200dp" style="object-fit:cover" alt=""></div>
                 {{-- gambar potrait --}}
                 {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
                 <div class="col-sm-4"></div>
@@ -989,8 +989,8 @@ Dashboard
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
-        <a href="/barang.temuan">
-          <button type="button" class="btn btn-success">Klaim</button>
+        <a href="/manajemen.akun">
+          <button type="button" class="btn btn-success">Simpan</button>
         </a>
       </div>
     </div>
@@ -1024,7 +1024,7 @@ Dashboard
 </div>
 <!-- /.modal -->
 
-<div class="modal fade" id="modal-default4">
+<div class="modal fade" id="modal-add">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -1035,96 +1035,91 @@ Dashboard
             <div class="modal-body">
                 <form role="form" action="">
                 <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-namabarang">Nama</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7"><input type="text" id="Form-namabarang" class="form-control validate white-text"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-lokasi">Lokasi Ditemukan</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7"><input type="text" id="Form-lokasi" class="form-control validate white-text"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-deskripsi">Deskripsi Barang</label></div>
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-nama">Nama</label></div>
                     <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
                     <div class="col-sm-7">
-                    <textarea name="deskripsi" class="form-control validate white-text" id="Form-deskripsi" rows="10"></textarea>
-                    {{-- <input type="text-area" id="Form-deskripsi" class="form-control validate white-text" value="Contoh Deskripsi Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang  Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang"> --}}
+                        <input type="text" name="nama" id="Form-nama" class="form-control validate white-text">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="datepicker">Waktu Ditemukan</label></div>
+                    <div class="row">
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-username">Username</label></div>
                     <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
                     <div class="col-sm-7">
-                    <div class="input-group date">
-                        <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" class="form-control pull-right" id="datepicker2">
-                    </div>
-                    <!-- /.input group -->
-                    {{-- <input type="date" id="Form-waktu" class="form-control validate white-text" value="2019-01-23"> --}}
+                        <input type="text" name="nama" id="Form-username" class="form-control validate white-text">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4"><p style="font-weight:700">Kategori</p></div>
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-email">Email</label></div>
                     <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
                     <div class="col-sm-7">
-                    <select class="form-control">
-                        <option value="Contoh Kategori 1">Contoh Kategori 1</option>
-                        <option value="Contoh Kategori 2">Contoh Kategori 2</option>
-                        <option value="Contoh Kategori 3">Contoh Kategori 3</option>
-                        <option value="Contoh Kategori 4">Contoh Kategori 4</option>
-                    </select>
-                    {{-- <input type="radio" id="Form-kategori1" class="form-control validate white-text" value="Contoh Kategori 1" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori1">Contoh Kategori 1</label>
-                    <input type="radio" id="Form-kategori2" class="form-control validate white-text" value="Contoh Kategori 2" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori2">Contoh Kategori 2</label>
-                    <input type="radio" id="Form-kategori3" class="form-control validate white-text" value="Contoh Kategori 3" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori3">Contoh Kategori 3</label>
-                    <input type="radio" id="Form-kategori4" class="form-control validate white-text" value="Contoh Kategori 4" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori4">Contoh Kategori 4</label> --}}
+                        <input type="email" name="nama" id="Form-email" class="form-control validate white-text">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4"><p style="font-weight:700">Validasi Barang</p></div>
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-password">Password</label></div>
                     <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
                     <div class="col-sm-7">
-                    <select class="form-control">
-                        <option value="Contoh Validasi 1">Contoh Validasi 1</option>
-                        <option value="Contoh Validasi 2">Contoh Validasi 2</option>
-                    </select>
-                    {{-- <input type="radio" id="Form-validasi1" class="form-control validate white-text" value="Contoh Validasi 1" checked>
-                    <label data-error="wrong" data-success="right" for="Form-validasi1">Contoh Validasi 1</label>
-                    <input type="radio" id="Form-validasi2" class="form-control validate white-text" value="Contoh Validasi 2" checked>
-                    <label data-error="wrong" data-success="right" for="Form-validasi2">Contoh Validasi 2</label> --}}
+                        <input type="text" name="nama" id="Form-password" class="form-control validate white-text">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-foto2">Foto Barang</label></div>
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-noident">No Identitas</label></div>
+                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+                    <div class="col-sm-7">
+                        <input type="text" name="nama" id="Form-noident" class="form-control validate white-text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-alamat">Alamat</label></div>
+                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+                    <div class="col-sm-7">
+                        <input type="text" name="nama" id="Form-alamat" class="form-control validate white-text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-nohp">No HP</label></div>
+                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+                    <div class="col-sm-7">
+                        <input type="text" name="nama" id="Form-nohp" class="form-control validate white-text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-aktor">Aktor</label></div>
+                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+                    <div class="col-sm-7">
+                        <select name="aktor" class="form-control">
+                            <option value="1">Admin</option>
+                            <option value="2">User</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-foto">Foto Profil</label></div>
                     <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
                     <div class="col-sm-4">
-                    {{-- gambar landscape --}}
-                    <input type="file" id="Form-foto2">
-                    {{-- gambar potrait --}}
-                    {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
+                        {{-- gambar landscape --}}
+                        <input type="file" id="Form-foto2">
+                        {{-- gambar potrait --}}
+                        {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                         <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-                    </a> --}}
+                        </a> --}}
                     </div>
                 </div>    
                 <br>
                 <div class="row justify-content-center">
+                    <div class="col-sm-4"></div>
                     {{-- gambar landscape --}}
-                    <div class="col-xs-12"><img id="image2" src="/img/foto_barang.png" style="width:inherit; height:inherit" alt=""></div>
+                    <div class="col-sm-4"><img class="img-circle" id="image2" src="/img/user.png" width="200dp" height="200dp" style="object-fit:cover" alt=""></div>
                     {{-- gambar potrait --}}
                     {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+                    <div class="col-sm-4"></div>
                 </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
                 <a href="/barang.temuan">
-                <button type="button" class="btn btn-success">Posting</button>
+                <button type="button" class="btn btn-success">Tambah</button>
                 </a>
             </div>
         </div>
