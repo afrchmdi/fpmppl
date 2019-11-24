@@ -68,10 +68,9 @@
             <li><a href="/laporan.klaim.kehilangan"><i class="fa fa-close"></i>Kehilangan</a></li>
           </ul>
         </li>
-        <li><a href="/ruang.email"><i class="fa fa-envelope-o"></i><span>Ruang Email</span></a></li>
         <!-- kalo admin, maka man akun baru bisa -->
         <?php
-          $lalala = "user";
+          $lalala = "admin";
           if($lalala === "admin"){
         ?>
         <li><a href="/manajemen.akun"><i class="fa fa-users"></i><span>Manajemen Akun</span></a></li>

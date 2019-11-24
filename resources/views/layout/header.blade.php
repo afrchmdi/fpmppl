@@ -45,10 +45,10 @@
             <!-- Menu Footer-->
             <li class="user-footer">
               <div class="pull-left">
-                <a href="/profil" class="btn btn-default">Profil</a>
+                <a href="/profil" class="btn btn-info">Profil</a>
               </div>
               <div class="pull-right">
-                <a href="/logout" class="btn btn-default">Log out</a>
+                <a href="/logout" class="btn btn-danger">Log out</a>
               </div>
             </li>
           </ul>

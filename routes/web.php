@@ -71,6 +71,9 @@ Route::get('/edit.profil', function() {
 Route::get('/edit.password', function() {
     return view('page.edit_password');
 });
+Route::get('/manajemen.akun', function() {
+    return view('page.man_akun');
+});
 
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
 Route::get('/editposthilang', 'UserController@showposthilang')->name('edithilang');
