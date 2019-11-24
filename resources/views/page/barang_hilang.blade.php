@@ -13,7 +13,7 @@ Dashboard
         <div class="col-xs-6"><h3>Daftar Barang - <b>Hilang</b></h3></div>
         <div class="col-xs-3"></div>
       <div class="col-xs-3">
-        <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-default3">Post Barang Hilang</button>
+        <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-post">Post Barang Hilang</button>
       </div>
       </div>
       <!-- /.box-header -->
@@ -40,16 +40,14 @@ Dashboard
                 <td>{{$user->kategori}}</td>
                 <td> @if($user->validasi == 0) Belum divalidasi @elseif($user->validasi == 1) Diterima @elseif($user->validasi == 2) Ditolak @endif</td>
                 <td class="row">
-                  <div class="col-xs-12">
-                    <div class="col-xs-6">
-                      <button type="button" class="btn btn-block btn-primary js-show-info" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-info">Lihat</button>
-                    </div>
-                    @if(Auth::user()->id != $user->id_pencari)
-                    <div class="col-xs-6">
-                      <button type="button" class="btn btn-block btn-info js-show-klaim" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-klaim">Klaim</button>
-                    </div>
-                    @endif
+                  <div class="col-sm-6">
+                    <button type="button" class="btn btn-block btn-primary js-show-info" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-info">Lihat</button>
                   </div>
+                  @if(Auth::user()->id != $user->id_pencari)
+                  <div class="col-sm-6">
+                    <button type="button" class="btn btn-block btn-info js-show-klaim" data-id="{{$user->id}}" data-toggle="modal" data-target="#modal-klaim">Klaim</button>
+                  </div>
+                  @endif
                 </td>
             </tr>
             @endforeach
@@ -224,118 +222,97 @@ Dashboard
 </div>
 <!-- /.modal -->
 
-<div class="modal fade" id="modal-default3">
+<!-- Modal -->
+<form method="POST" class="form-horizontal" enctype="multipart/form-data" id="js-modal-pass" action="{{ route('posthilang')}}">
+  {{ csrf_field() }}
+<div class="modal fade" id="modal-post">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Posting Barang Hilang</h4>
-            </div>
-            <div class="modal-body">
-                <form role="form" action="">
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-namabarang">Nama Barang</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7"><input type="text" id="Form-namabarang" class="form-control validate white-text"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-lokasi">Lokasi Hilang</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7"><input type="text" id="Form-lokasi" class="form-control validate white-text"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-deskripsi">Deskripsi Barang</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7">
-                    <textarea name="deskripsi" class="form-control validate white-text" id="Form-deskripsi" rows="10"></textarea>
-                    {{-- <input type="text-area" id="Form-deskripsi" class="form-control validate white-text" value="Contoh Deskripsi Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang  Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang"> --}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="datepicker">Waktu Hilang</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7">
-                    <div class="input-group date">
-                        <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" class="form-control pull-right" id="datepicker2">
-                    </div>
-                    <!-- /.input group -->
-                    {{-- <input type="date" id="Form-waktu" class="form-control validate white-text" value="2019-01-23"> --}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><p style="font-weight:700">Kategori</p></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7">
-                    <select class="form-control">
-                        <option value="Contoh Kategori 1">Contoh Kategori 1</option>
-                        <option value="Contoh Kategori 2">Contoh Kategori 2</option>
-                        <option value="Contoh Kategori 3">Contoh Kategori 3</option>
-                        <option value="Contoh Kategori 4">Contoh Kategori 4</option>
-                    </select>
-                    {{-- <input type="radio" id="Form-kategori1" class="form-control validate white-text" value="Contoh Kategori 1" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori1">Contoh Kategori 1</label>
-                    <input type="radio" id="Form-kategori2" class="form-control validate white-text" value="Contoh Kategori 2" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori2">Contoh Kategori 2</label>
-                    <input type="radio" id="Form-kategori3" class="form-control validate white-text" value="Contoh Kategori 3" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori3">Contoh Kategori 3</label>
-                    <input type="radio" id="Form-kategori4" class="form-control validate white-text" value="Contoh Kategori 4" checked>
-                    <label data-error="wrong" data-success="right" for="Form-kategori4">Contoh Kategori 4</label> --}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><p style="font-weight:700">Validasi Barang</p></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-7">
-                    <select class="form-control">
-                        <option value="Contoh Validasi 1">Contoh Validasi 1</option>
-                        <option value="Contoh Validasi 2">Contoh Validasi 2</option>
-                    </select>
-                    {{-- <input type="radio" id="Form-validasi1" class="form-control validate white-text" value="Contoh Validasi 1" checked>
-                    <label data-error="wrong" data-success="right" for="Form-validasi1">Contoh Validasi 1</label>
-                    <input type="radio" id="Form-validasi2" class="form-control validate white-text" value="Contoh Validasi 2" checked>
-                    <label data-error="wrong" data-success="right" for="Form-validasi2">Contoh Validasi 2</label> --}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-foto2">Foto Barang</label></div>
-                    <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
-                    <div class="col-sm-4">
-                    {{-- gambar landscape --}}
-                    <input type="file" id="Form-foto2">
-                    {{-- gambar potrait --}}
-                    {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
-                        <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-                    </a> --}}
-                    </div>
-                </div>    
-                <br>
-                <div class="row justify-content-center">
-                    {{-- gambar landscape --}}
-                    <div class="col-xs-12"><img id="image2" src="/img/foto_barang.png" style="width:inherit; height:inherit" alt=""></div>
-                    {{-- gambar potrait --}}
-                    {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
-                </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
-                <a href="/barang.hilang">
-                <button type="button" class="btn btn-success">Posting</button>
-                </a>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Posting Barang Hilang</h4>
         </div>
-        <!-- /.modal-content -->
+        <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-namabarang">Nama Barang</label></div>
+              <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+              <div class="col-sm-7"><input type="text" id="Form-namabarang" name="Form-namabarang" class="form-control validate white-text"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-lokasi">Lokasi Hilang</label></div>
+              <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+              <div class="col-sm-7"><input type="text" id="Form-lokasi" name="Form-lokasi" class="form-control validate white-text"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-deskripsi">Deskripsi Barang</label></div>
+              <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+              <div class="col-sm-7">
+                <textarea class="form-control validate white-text" id="Form-deskripsi" name="Form-deskripsi" rows="10"></textarea>
+                {{-- <input type="text-area" id="Form-deskripsi" class="form-control validate white-text" value="Contoh Deskripsi Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang  Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang"> --}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="datepicker">Waktu Hilang</label></div>
+              <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+              <div class="col-sm-7">
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="date" class="form-control pull-right" id="datepicker Form-waktu" name="Form-waktu">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><p style="font-weight:700">Kategori</p></div>
+              <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+              <div class="col-sm-7">
+                <select class="form-control" id="Form-kategori" name="Form-kategori">
+                  <option value="1">Kategori 1</option>
+                  <option value="2">Kategori 2</option>
+                  <option value="3">Kategori 3</option>
+                  <option value="4">Kategori 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><label data-error="wrong" data-success="right" for="foto">Foto Barang</label></div>
+              <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
+              <div class="col-sm-4">
+                {{-- gambar landscape --}}
+                {{-- <input type="file" id="foto" name="foto" class="foto"> --}}
+                <input name="foto" type="file" class="form-control" id="foto">
+                {{-- gambar potrait --}}
+                {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
+                  <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
+                </a> --}}
+              </div>
+            </div>    
+            <br>
+            <div class="row justify-content-center">
+              {{-- gambar landscape --}}
+              <div class="col-xs-12"><img id="image2" src="/img/foto_barang.png" style="width:inherit; height:inherit" alt=""></div>
+              {{-- gambar potrait --}}
+              {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-success">Posting</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
     </div>
     <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
+  </div>
+  <!-- /.modal -->
+</form>
 
 <script>
-document.getElementById("Form-foto").onchange = function () {
+// document.getElementById("Form-foto").onchange = function () {
+  $(document).on("change", "#foto", function () {
     var reader = new FileReader();
 
     reader.onload = function (e) {
@@ -345,9 +322,10 @@ document.getElementById("Form-foto").onchange = function () {
 
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
-};
+});
 
-document.getElementById("Form-foto2").onchange = function () {
+// document.getElementById("Form-foto2").onchange = function () {
+  $(document).on("change", "#foto", function () {
     var reader = new FileReader();
 
     reader.onload = function (e) {
@@ -357,7 +335,7 @@ document.getElementById("Form-foto2").onchange = function () {
 
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
-};
+});
 
 $(document).on("click", ".js-show-info", function () {
   var id = $(this).data('id');
