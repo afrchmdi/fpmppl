@@ -41,9 +41,9 @@ Route::get('/riwayat.postingan.kehilangan', 'UserController@postkehilangan');
 Route::post('/post.kehilangan', 'UserController@post')->name('posthilang');
 Route::post('/edit.kehilangan/{id}', 'UserController@edit')->name('editposthilang');
 
-Route::get('/riwayat.klaim.penemuan', function () {
-    return view('page.riwayat_klaim_penemuan');
-});
+// riwayat klaim penemuan
+Route::get('/riwayat.klaim.penemuan', 'CariController@klaimpenemuan');
+
 
 // riwayat klaim kehilangan
 Route::get('/riwayat.klaim.kehilangan', 'UserController@klaimkehilangan');
@@ -63,8 +63,13 @@ Route::get('/laporan.klaim.penemuan', 'CariController@laporanklaim');
 // show klaim di halaman laporanklaimpenemuan
 Route::get('/showklaim', 'CariController@showklaim')->name('showklaim');
 
+//edit klaim penemuan
+Route::post('/editklaimpenemuan/{id}', 'CariController@editklaimpenemuan')->name('editklaimpenemuan');
+
+
 // validasi penemuan 
-Route::post('/validasipenemuanterima/{id}', 'CariController@validasiterima')->name('validasipenemuanterima');
+Route::post('/validasipenemuanterima', 'CariController@validasiterima')->name('validasipenemuanterima');
+Route::post('/validasipenemuantolak', 'CariController@validasitolak')->name('validasipenemuantolak');
 
 Route::get('/laporan.klaim.kehilangan', function () {
     return view('page.laporan_klaim_kehilangan');

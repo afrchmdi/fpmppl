@@ -248,7 +248,7 @@ Dashboard
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Tidak</button>
-        <button id="js-klaim-terima" data-validasi="1" data-terima="1" data-idbarang="" data-idklaim="" type="submit" class="btn btn-success">Yakin</button>
+        <button data-validasi="1" data-terima="1" data-idbarang="" data-idklaim="" type="submit" class="btn btn-success js-klaim-terima">Yakin</button>
       </div>
     </div>
     <!-- /.modal-content -->
@@ -285,8 +285,66 @@ Dashboard
 $(document).on("click", ".js-validasiterima", function () {
   var idbarang = $(this).data('idbarang');
   var idklaim = $(this).data('idklaim');
+  
+  $('.js-klaim-terima').data('idbarang', idbarang);
+  $('.js-klaim-terima').data('idklaim', idklaim);
+});
+
+$(document).on("click", ".js-validasitolak", function () {
+  var idbarang = $(this).data('idbarang');
+  var idklaim = $(this).data('idklaim');
+  
+  $('.js-klaim-tolak').data('idbarang', idbarang);
+  $('.js-klaim-tolak').data('idklaim', idklaim);
+});
+
+$(document).on("click", ".js-klaim-terima", function () {
+  var idbarang = $(this).data('idbarang');
+  var idklaim = $(this).data('idklaim');
 
   // console.log(idbarang, idklaim);
+  $.ajax({
+          url: 'validasipenemuanterima',
+          method: 'post',
+          data: {
+            idbarang: idbarang,
+            idklaim: idklaim,
+            _token: '{{ csrf_token()}}'
+          },
+          success: function(response){
+            if (response.message == 'success') {
+              alert('Barang berhasil divalidasi');
+            } else {
+              alert('error');
+            }
+          }
+        });
+});
+
+$(document).on("click", ".js-klaim-tolak", function () {
+  var idbarang = $(this).data('idbarang');
+  var idklaim = $(this).data('idklaim');
+  var idklaim = $(this).data('idklaim');
+
+  // console.log(idbarang, idklaim);
+  $.ajax({
+          url: 'validasipenemuantolak',
+          method: 'post',
+          data: {
+            idbarang: idbarang,
+            idklaim: idklaim,
+            _token: '{{ csrf_token()}}'
+          },
+          success: function(response){
+            if (response.message == 'success') {
+              alert('Barang validasi berhasil ditolak');
+            } else {
+              alert('error');
+            }
+          }
+        });
+
+  
 
 });
 

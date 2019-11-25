@@ -31,6 +31,7 @@ class CreateTableKlaim extends Migration
             $table->string('jenis');
             $table->string('deskripsi');
             $table->text('foto_bukti');
+            $table->integer()('stat')->nullable();
             $table->timestamps();
         });
     }
