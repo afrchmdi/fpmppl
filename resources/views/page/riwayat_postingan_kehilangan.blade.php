@@ -229,7 +229,7 @@ $(function () {
                 <div class="input-group-addon">
                   <i class="fa fa-calendar"></i>
                 </div>
-              <input type="date" name="waktu" class="form-control pull-right" id="datepicker Form-waktu" value="{{old('waktu')}}" placeholder="{{old('waktu')}}">
+              <input type="date" name="waktu" class="form-control pull-right" id="Form-waktu" value="{{old('waktu')}}" placeholder="{{old('waktu')}}">
               </div>
               <!-- /.input group -->
               {{-- <input type="date" id="Form-waktu" class="form-control validate white-text" value="2019-01-23"> --}}
@@ -317,7 +317,7 @@ $(function () {
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="date" class="form-control pull-right" id="datepicker Form-waktu" name="Form-waktu">
+                  <input type="date" class="form-control pull-right" id="Form-waktu" name="Form-waktu">
                 </div>
               </div>
             </div>
@@ -434,7 +434,8 @@ $(document).on("change", "#foto", function () {
               // console.log(d);
               // $("#Form-waktu").attr('placeholder', waktu);
               // $("#Form-waktu").attr('value', waktu);
-              $("#Form-waktu").datepicker(waktu);
+              // $("#Form-waktu").datepicker(waktu);
+              $("#Form-waktu").val(waktu);
               // $("#Form-waktu").text(waktu);
               if(kategori == 1){
                 $("#Form-kategori").val("Kategori 1");

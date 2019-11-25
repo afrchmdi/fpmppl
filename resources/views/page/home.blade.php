@@ -172,7 +172,7 @@
         <!-- Team Member 2 -->
         <div class="col-xl-4 col-md-6 mb-4">
           <div class="card border-0 shadow">
-            <img src="img/team1.jpg" class="card-img-top" alt="...">
+            <img src="img/team2.jpg" class="card-img-top" alt="...">
             {{-- <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="..."> --}}
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Aurelia Fairuz Rachmadi</h5>
