@@ -20,7 +20,7 @@ class UserController extends Controller
             ->distinct()
             ->get();
         if($user->has('id')){
-            dd($user);
+            // dd($user);
         }
         else{
             $user->id =  Auth::user()->id;
@@ -40,6 +40,17 @@ class UserController extends Controller
             ->distinct()
             ->get();
             // dd($datas);
+            if($user->has('id')){
+                // dd($user);
+            }
+            else{
+                $user->id =  Auth::user()->id;
+                $user->nama_barang = NULL;
+                $user->lokasi = NULL;
+                $user->waktu = NULL;
+                $user->kategori = NULL;
+                $user->validasi = NULL;
+            }
 
         return view('page.riwayat_klaim_kehilangan', ['user' => $user]);
     }

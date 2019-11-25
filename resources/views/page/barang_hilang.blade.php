@@ -296,19 +296,18 @@ Dashboard
               {{-- gambar potrait --}}
               {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
             </div>
-          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
+            <button type="submit" class="btn btn-success">Posting</button>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Batal</button>
-          <button type="submit" class="btn btn-success">Posting</button>
-        </div>
-      </div>
-      <!-- /.modal-content -->
+        <!-- /.modal-content -->
+      </form>
     </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
-</form>
 
 <script>
 // document.getElementById("Form-foto").onchange = function () {

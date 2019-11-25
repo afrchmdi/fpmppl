@@ -41,6 +41,10 @@ Route::get('/riwayat.postingan.kehilangan', 'UserController@postkehilangan');
 Route::post('/post.kehilangan', 'UserController@post')->name('posthilang');
 Route::post('/edit.kehilangan/{id}', 'UserController@edit')->name('editposthilang');
 
+Route::get('/riwayat.postingan.penemuan', 'TemuController@postpenemuan');
+Route::post('/post.penemuan', 'TemuController@post')->name('posttemu');
+Route::post('/edit.penemuan/{id}', 'TemuController@edit')->name('editposttemu');
+
 // riwayat klaim penemuan
 Route::get('/riwayat.klaim.penemuan', 'CariController@klaimpenemuan');
 
@@ -54,11 +58,17 @@ Route::get('/barang.temuan', 'TemuController@temuan');
 // get klaim barang hilang
 Route::post('/klaimhilang/{id}', 'CariController@postklaimhilang')->name('klaimhilang');
 
+// get klaim barang temuan
+Route::post('/klaimtemu/{id}', 'TemuController@postklaimtemu')->name('klaimtemu');
+
 // barang hilang
 Route::get('/barang.hilang', 'CariController@hilang');
 
 // laporan klaim penemuan
 Route::get('/laporan.klaim.penemuan', 'CariController@laporanklaim');
+
+// laporan klaim kehilangan
+Route::get('/laporan.klaim.kehilangan', 'TemuController@laporanklaim');
 
 // show klaim di halaman laporanklaimpenemuan
 Route::get('/showklaim', 'CariController@showklaim')->name('showklaim');
@@ -66,14 +76,17 @@ Route::get('/showklaim', 'CariController@showklaim')->name('showklaim');
 //edit klaim penemuan
 Route::post('/editklaimpenemuan/{id}', 'CariController@editklaimpenemuan')->name('editklaimpenemuan');
 
+// edit klaim hilang
+Route::post('/editklaimhilang/{id}', 'TemuController@editklaimhilang')->name('editklaimhilang');
 
 // validasi penemuan 
 Route::post('/validasipenemuanterima', 'CariController@validasiterima')->name('validasipenemuanterima');
 Route::post('/validasipenemuantolak', 'CariController@validasitolak')->name('validasipenemuantolak');
 
-Route::get('/laporan.klaim.kehilangan', function () {
-    return view('page.laporan_klaim_kehilangan');
-});
+// validasi kehilangan
+Route::post('/validasikehilanganterima', 'TemuController@validasiterima')->name('validasikehilanganterima');
+Route::post('/validasikehilangantolak', 'TemuController@validasitolak')->name('validasikehilangantolak');
+
 Route::get('/ruang.email', function () {
     return view('page.ruang_email');
 });
@@ -93,6 +106,10 @@ Route::get('/manajemen.akun', function() {
     return view('page.man_akun');
 });
 
+
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
 Route::get('/edit-post-hilang', 'UserController@showposthilang')->name('edithilang');
 Route::get('/show-post-temu', 'UserController@showposttemu')->name('showposttemu');
+
+Route::get('/showposttemu', 'TemuController@showposttemu')->name('showposttemu');
+Route::get('/edit-post-temu', 'TemuController@showposttemu')->name('edittemu');

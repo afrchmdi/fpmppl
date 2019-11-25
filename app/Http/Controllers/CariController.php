@@ -68,6 +68,7 @@ class CariController extends Controller
             ->where('id_pencari', '=', Auth::user()->id)
             ->join('klaim', 'barang_hilang.id', '=', 'klaim.id_barang')
             ->where('barang_hilang.validasi', '!=', 1)
+            ->where('barang_hilang.klaim', '=', '1')
             ->distinct()
             ->get();
             // dd($user);
@@ -151,7 +152,7 @@ class CariController extends Controller
             'stat' => 2,
         ]);
         
-        
+        return redirect()->back();
     }
 
     public function klaimpenemuan(){
