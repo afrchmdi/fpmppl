@@ -8,6 +8,7 @@ use App\Klaim;
 use App\BarangValidasi;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\URL;
 
 class CariController extends Controller
 {
@@ -79,14 +80,18 @@ class CariController extends Controller
     public function showklaim(Request $request){
         $id = request('id');
 
-        $data = DB::table('klaim')
-                ->where('id', '=', $id)
-                ->first();
+        // $data = DB::table('klaim')
+        //         ->where('id', '=', $id)
+        //         ->first();
+        $datas = new Klaim();
+        $data = $datas->get($id);
+        
 
                 $values = [
                     'message' => 'success',
                     'deskripsi' => $data->deskripsi,
-                    'foto' => $data->foto_bukti,
+                    // 'foto' => $data->foto_bukti,
+                    'foto' => URL::asset('uploads/klaim/' .$data->foto_bukti),
                 ];
     
                 return response()->json($values);
@@ -159,14 +164,43 @@ class CariController extends Controller
         $user = DB::table('klaim')
                 ->where('id_klaim', '=', Auth::user()->id)
                 ->join('barang_hilang', 'barang_hilang.id', '=', 'klaim.id_barang')
+                ->select('klaim.*', 'barang_hilang.nama_barang', 'barang_hilang.nama_pencari', 'barang_hilang.lokasi', 'barang_hilang.waktu', 'barang_hilang.kategori', 'barang_hilang.validasi', 'barang_hilang.foto')
                 ->distinct()
                 ->get();
                 // dd($user);
+        if($user->has('id')){
+            // dd($user);
+        }
+        else{
+            $user->id =  Auth::user()->id;
+            $user->nama_barang = NULL;
+            $user->lokasi = NULL;
+            $user->waktu = NULL;
+            $user->kategori = NULL;
+            $user->validasi = NULL;
+        }
 
         return view('page.riwayat_klaim_penemuan', ['user' => $user]);
     }
 
     public function editklaimpenemuan(Request $request, $id){
+        $file = $request->file('foto');
+        // $idnya = request('id');
+        // dd($id);
+        
+        if ($request->hasFile('foto')){
+            // dd($file);
+            $file->getClientOriginalName();
+            $file->getClientOriginalExtension();
+            $file->getRealPath();
+            $file->getSize();
+            $file->getMimeType();
+            $filename = 'bukti-klaim-temuan-' . $id . '.jpg';
+            
+            $destinationPath = 'uploads/klaim';
+            $file->move($destinationPath, $filename);
+        }
+
         $klaim = DB::table('klaim')->where('id', '=', $id)
         ->update([
             'deskripsi' => $request->input('deskripsi'),
@@ -174,5 +208,12 @@ class CariController extends Controller
 
         // dd($klaim);
 
+        return redirect()->back();
+    }
+    
+    public function batalklaim($id){
+        $klaim = DB::table('klaim')->where('id', '=', $id)->delete();
+        
+        return redirect()->back();
     }
 }

@@ -155,10 +155,10 @@ Dashboard
             <div class="col-sm-4">
               {{-- gambar landscape --}}
               {{-- <a href="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" target="_blank"> --}}
-              <a  src="" target="_blank" >
+              {{-- <a  src="" target="_blank" >
   
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-              </a>
+              </a> --}}
               {{-- gambar potrait --}}
               {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -206,9 +206,9 @@ Dashboard
             <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
             <div class="col-sm-4">
               {{-- gambar landscape --}}
-              <a href="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" target="_blank">
+              {{-- <a href="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" target="_blank">
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-              </a>
+              </a> --}}
               {{-- gambar potrait --}}
               {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>

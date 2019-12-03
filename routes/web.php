@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -109,7 +111,9 @@ Route::get('/manajemen.akun', function() {
 
 Route::get('/showposthilang', 'UserController@showposthilang')->name('showposthilang');
 Route::get('/edit-post-hilang', 'UserController@showposthilang')->name('edithilang');
-Route::get('/show-post-temu', 'UserController@showposttemu')->name('showposttemu');
 
 Route::get('/showposttemu', 'TemuController@showposttemu')->name('showposttemu');
 Route::get('/edit-post-temu', 'TemuController@showposttemu')->name('edittemu');
+
+Route::post('/batal-klaim-penemuan/{id}', 'CariController@batalklaim')->name('batalklaimpenemuan');
+Route::post('/batal-klaim-kehilangan/{id}', 'TemuController@batalklaim')->name('batalklaimkehilangan');

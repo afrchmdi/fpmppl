@@ -143,9 +143,9 @@ Dashboard
             {{-- <a href="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" target="_blank">
               <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
             </a> --}}
-            <a  src="" target="_blank" >
+            {{-- <a  src="" target="_blank" >
               <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-            </a>
+            </a> --}}
             {{-- gambar potrait --}}
             {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
               <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -157,7 +157,7 @@ Dashboard
           {{-- gambar landscape --}}
           {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
           {{-- gambar potrait --}}
-          {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+          <div class="col-xs-12"><img class="js-ganti-foto" src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div>
         {{-- </div> --}}
       </div>
       <div class="modal-footer">
@@ -185,8 +185,7 @@ Dashboard
                 <div class="col-sm-4"><label data-error="wrong" data-success="right" for="Form-deskripsi">Deskripsi Klaim Penemuan</label></div>
                 <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
                 <div class="col-sm-7">
-                    <textarea name="deskripsi" class="form-control validate white-text" id="Form-deskripsi" rows="15">
-                    </textarea>
+                    <textarea name="deskripsi" class="form-control validate white-text" id="Form-deskripsi" rows="15"></textarea>
                     {{-- <input type="text-area" id="Form-deskripsi" class="form-control validate white-text" value="Contoh Deskripsi Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang  Barang Deskripsi Barang Deskripsi Barang Deskripsi Barang"> --}}
                 </div>
             </div>
@@ -361,7 +360,7 @@ $(document).on("click", ".js-show-info", function () {
               $(".js-deskripsi").text(deskripsi);
               $(".js-waktu").text(waktu);
               // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-              // $(".js-show-foto").attr('src', foto);
+              $(".js-ganti-foto").attr('src', foto);
 
               if(validasi == 0){
                 $(".js-validasi").text("Belum Divalidasi");

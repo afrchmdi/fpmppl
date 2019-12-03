@@ -163,10 +163,10 @@ Dashboard
             <div class="col-sm-4">
               {{-- gambar landscape --}}
               {{-- <a href="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" target="_blank"> --}}
-              <a  src="" target="_blank" >
+              {{-- <a  src="" target="_blank" >
   
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-              </a>
+              </a> --}}
               {{-- gambar potrait --}}
               {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -180,7 +180,7 @@ Dashboard
               <img class="js-show-foto" src="" style="width:inherit; height:inherit" alt="">
             </div>
             {{-- gambar potrait --}}
-            {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+            <div class="col-xs-12"><img class="js-ganti-foto" src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div>
           </div>
         </div>
         <div class="modal-footer">
@@ -221,7 +221,7 @@ Dashboard
               <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
               <div class="col-sm-4">
                 {{-- gambar landscape --}}
-                <input type="file" id="Form-foto">
+                <input type="file" id="Form-foto" name="foto">
                 {{-- gambar potrait --}}
                 {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                   <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -231,7 +231,7 @@ Dashboard
             <br>
             <div class="row justify-content-center">
               {{-- gambar landscape --}}
-              <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
+              <div class="col-xs-12"><img class="js-ganti-foto" id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
               {{-- gambar potrait --}}
               {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
             </div>
@@ -256,14 +256,16 @@ Dashboard
             <span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title">Pembatalan Klaim Penemuan Barang Temuan</h4>
         </div>
+        <form method="POST" role="form" action="{{ route('batalklaimkehilangan', $user->id) }}" enctype="multipart/form-data">
+          {{ csrf_field() }}
         <div class="modal-body">
           <p>Apakah kamu yakin membatalkan klaim penemuan barang temuan ini?</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-warning pull-left" data-dismiss="modal">Tidak</button>
-          <a href="/riwayat.klaim.kehilangan">
-            <button type="button" class="btn btn-success">Yakin</button>
-          </a>
+          {{-- <a href="/riwayat.klaim.kehilangan"> --}}
+            <button type="submit" class="btn btn-success">Yakin</button>
+          {{-- </a> --}}
         </div>
       </div>
       <!-- /.modal-content -->
@@ -280,7 +282,7 @@ Dashboard
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">Informasi Klaim Penemuan Barang Temuan</h4>
-            <p class="help-block" style="margin:0">Update terakhir 12/12/2019 00:59</p>
+            {{-- <p class="help-block" style="margin:0">Update terakhir 12/12/2019 00:59</p> --}}
           </div>
           <div class="modal-body">
             <div class="row">
@@ -293,9 +295,9 @@ Dashboard
               <div class="col-sm-1" style="padding-right:0; padding-left:0; width:1%">:</div>
               <div class="col-sm-4">
                 {{-- gambar landscape --}}
-                <a href="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" target="_blank">
+                {{-- <a href="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" target="_blank">
                   <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-                </a>
+                </a> --}}
                 {{-- gambar potrait --}}
                 {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
                   <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
@@ -305,9 +307,9 @@ Dashboard
             <br>
             <div class="row justify-content-center">
               {{-- gambar landscape --}}
-              <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
+              {{-- <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
               {{-- gambar potrait --}}
-              {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+              <div class="col-xs-12"><img class="js-ganti-foto" src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div>
             </div>
           </div>
           <div class="modal-footer">
@@ -352,7 +354,8 @@ Dashboard
               $("#deskripsi").text(deskripsi);
 
               // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-              // $(".js-show-foto").attr('src', foto);
+              $(".js-ganti-foto").attr('src', foto);
+              $('.jseditklaim').attr('action', '{{ route('editklaimhilang', ['id' => '']) }}' + '/' + id);
 
             } else {
               alert('error');
@@ -360,7 +363,6 @@ Dashboard
           }
         });
 
-  $('.jseditklaim').attr('action', '{{ route('editklaimhilang', ['id' => '']) }}' + '/' + id);
 });
 
   $(document).on("click", ".js-barang", function () {
@@ -388,7 +390,7 @@ Dashboard
               $(".js-deskripsi").text(deskripsi);
               $(".js-waktu").text(waktu);
               // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-              // $(".js-show-foto").attr('src', foto);
+              $(".js-ganti-foto").attr('src', foto);
 
               if(validasi == 0){
                 $(".js-validasi").text("Belum Divalidasi");
@@ -441,7 +443,7 @@ $(document).on("click", ".js-info", function () {
               $(".deskripsii").text(deskripsi);
 
               // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-              // $(".js-show-foto").attr('src', foto);
+              $(".js-ganti-foto").attr('src', foto);
 
             } else {
               alert('error');

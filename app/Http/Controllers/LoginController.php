@@ -35,9 +35,10 @@ class LoginController extends Controller
         
         else {
             // alert("gagal:(");
-            return redirect()->intended('500');
+            // return redirect()->intended('500');
             // echo"gagal";
-            return redirect()->back()->with('failmessage', 'Username/Password anda salah!');
+            // return redirect()->back()->with('failmessage', 'Username/Password anda salah!');
+            return redirect()->back()->with('alert', 'Username/Password anda salah!');
 
         }
     }

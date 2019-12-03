@@ -7,6 +7,7 @@ use App\BarangHilang;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\URL;
 
 class UserController extends Controller
 {
@@ -35,11 +36,18 @@ class UserController extends Controller
     }
 
     public function klaimkehilangan(){
-        $user = DB::table('barang_temuan')
-            ->where('id_penemu', '!=', Auth::user()->id)
-            ->distinct()
-            ->get();
-            // dd($datas);
+        // $user = DB::table('barang_temuan')
+        //     ->where('id_penemu', '!=', Auth::user()->id)
+        //     ->distinct()
+        //     ->get();
+        //     // dd($datas);
+        $user = DB::table('klaim')
+                ->where('id_klaim', '=', Auth::user()->id)
+                ->join('barang_temuan', 'barang_temuan.id', '=', 'klaim.id_barang')
+                ->select('klaim.*', 'barang_temuan.nama_barang', 'barang_temuan.nama_penemu', 'barang_temuan.lokasi', 'barang_temuan.waktu', 'barang_temuan.kategori')
+                ->distinct()
+                ->get();
+
             if($user->has('id')){
                 // dd($user);
             }
@@ -51,6 +59,8 @@ class UserController extends Controller
                 $user->kategori = NULL;
                 $user->validasi = NULL;
             }
+
+            // dd($user);
 
         return view('page.riwayat_klaim_kehilangan', ['user' => $user]);
     }
@@ -69,7 +79,9 @@ class UserController extends Controller
                 'waktu' => $what->waktu,
                 'kategori' => $what->kategori,
                 'validasi' => $what->validasi,
-                'foto' => "{{ URL::asset('uploads/kehilangan/".$what->foto."') }}"
+                // 'foto' => "{{ URL::asset('uploads/kehilangan/".$what->foto."') }}"
+                'foto' => URL::asset('uploads/kehilangan/' .$what->foto),
+                // 'foto' => URL::asset('uploads/temuan/'.$what->foto),
             ];
 
             return response()->json($values);
@@ -89,6 +101,7 @@ class UserController extends Controller
         $post->kategori = $request->input('Form-kategori');
         $post->validasi = 0;
         $post->klaim = 0;
+        $post->save();
 
         $file = $request->file('foto');
         // dd($file);
@@ -100,7 +113,7 @@ class UserController extends Controller
             $file->getRealPath();
             $file->getSize();
             $file->getMimeType();
-            $filename = 'foto-kehilangan-' . Auth::user()->id . '.jpg';
+            $filename = $post->id. 'foto-kehilangan-' . Auth::user()->id . '.jpg';
             
             $destinationPath = 'uploads/kehilangan';
             $file->move($destinationPath, $filename);
@@ -127,8 +140,23 @@ class UserController extends Controller
         // $data->kategori = $request->input('kategori');
         // dd($data);
         // dd($request->input('waktu'));
+        $file = $request->file('foto');
+        // dd($file);
+        
+        if ($request->hasFile('foto')){
+            // dd($file);
+            $file->getClientOriginalName();
+            $file->getClientOriginalExtension();
+            $file->getRealPath();
+            $file->getSize();
+            $file->getMimeType();
+            $filename = $id. '-foto-kehilangan-' . Auth::user()->id . '.jpg';
+            
+            $destinationPath = 'uploads/kehilangan';
+            $file->move($destinationPath, $filename);
+        }
 
-        $data = BarangHilang::where('id', $id)->first()
+        $data = DB::table('barang_hilang')->where('id', '=', $id)
                 ->update([
                     'nama_barang' => $request->input('namabarang'),
                     'lokasi' => $request->input('lokasi'),

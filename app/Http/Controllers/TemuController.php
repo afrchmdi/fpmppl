@@ -4,8 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\BarangTemuan;
+use App\BarangValidasi;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Klaim;
+use Illuminate\Support\Facades\URL;
+
 
 class TemuController extends Controller
 {
@@ -120,6 +124,7 @@ class TemuController extends Controller
         $post->kategori = $request->input('Form-kategori');
         $post->validasi = 0;
         $post->klaim = 0;
+        $post->save();
 
         $file = $request->file('foto');
         // dd($file);
@@ -131,10 +136,13 @@ class TemuController extends Controller
             $file->getRealPath();
             $file->getSize();
             $file->getMimeType();
-            $filename = 'foto-penemuan-' . Auth::user()->id . '.jpg';
+            $filename = $post->id. 'foto-penemuan-' . Auth::user()->id . '.jpg';
             
             $destinationPath = 'uploads/temuan';
             $file->move($destinationPath, $filename);
+        }
+        else{
+            dd("hmm");
         }
 
         $post->foto = $filename;
@@ -157,7 +165,8 @@ class TemuController extends Controller
                 'waktu' => $what->waktu,
                 'kategori' => $what->kategori,
                 'validasi' => $what->validasi,
-                'foto' => "{{ URL::asset('uploads/temuan/".$what->foto."') }}"
+                // 'foto' => "{{ URL::asset('uploads/temuan/".$what->foto."') }}"
+                'foto' => URL::asset('uploads/temuan/'.$what->foto),
             ];
 
             return response()->json($values);
@@ -165,8 +174,23 @@ class TemuController extends Controller
 
 
     public function edit(Request $request, $id){
+        $file = $request->file('foto');
+        // dd($file);
+        
+        if ($request->hasFile('foto')){
+            // dd($file);
+            $file->getClientOriginalName();
+            $file->getClientOriginalExtension();
+            $file->getRealPath();
+            $file->getSize();
+            $file->getMimeType();
+            $filename = $id. '-foto-penemuan-' . Auth::user()->id . '.jpg';
+            
+            $destinationPath = 'uploads/temuan';
+            $file->move($destinationPath, $filename);
+        }
 
-        $data = BarangTemuan::where('id', $id)->first()
+        $data = DB::table('barang_temuan')->where('id', '=', $id)
                 ->update([
                     'nama_barang' => $request->input('namabarang'),
                     'lokasi' => $request->input('lokasi'),
@@ -181,12 +205,30 @@ class TemuController extends Controller
     }
 
     public function editklaimhilang(Request $request, $id){
+        $file = $request->file('foto');
+        // $idnya = request('id');
+        // dd($id);
+        
+        if ($request->hasFile('foto')){
+            // dd($file);
+            $file->getClientOriginalName();
+            $file->getClientOriginalExtension();
+            $file->getRealPath();
+            $file->getSize();
+            $file->getMimeType();
+            $filename = 'bukti-klaim-hilang-' . $id . '.jpg';
+            
+            $destinationPath = 'uploads/klaim';
+            $file->move($destinationPath, $filename);
+        }
+
         $klaim = DB::table('klaim')->where('id', '=', $id)
         ->update([
             'deskripsi' => $request->input('deskripsi'),
         ]);
 
         // dd($klaim);
+        return redirect()->back();
 
     }
 
@@ -249,6 +291,12 @@ class TemuController extends Controller
         ->update([
             'stat' => 2,
         ]);
+        
+        return redirect()->back();
+    }
+
+    public function batalklaim($id){
+        $klaim = DB::table('klaim')->where('id', '=', $id)->delete();
         
         return redirect()->back();
     }
