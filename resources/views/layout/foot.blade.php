@@ -1,6 +1,9 @@
     <!-- ./wrapper -->
     <!-- jQuery 3 -->
     <script src="AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="AdminLTE/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <!-- Bootstrap 3.4.1 -->
     <script src="AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     {{-- Datatables --}} 

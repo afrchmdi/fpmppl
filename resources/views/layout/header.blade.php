@@ -16,16 +16,16 @@
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
         <!-- User Account: style can be found in dropdown.less -->
-        <li class="dropdown user user-menu">
+        <li id="dd" class="dropdown user user-menu" onclick="document.getElementById('dd').className += ' open'">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            {{-- <img src="AdminLTE/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> --}}
-          {{-- <span class="hidden-xs">{{Auth::user()->username}}</span> --}}
+            <img src="img/team1.jpg" class="user-image" alt="User Image" style="object-fit:cover">
+          <span class="hidden-xs">{{Auth::user()->username}}</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
-              {{-- <img src="AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
-              {{-- <p>{{Auth::user()->nama}}</p> --}}
+              <img src="img/team1.jpg" class="img-circle" alt="User Image" style="object-fit:cover">
+              <p>{{Auth::user()->nama}}</p>
             </li>
             <!-- Menu Body -->
             <li class="user-body">
