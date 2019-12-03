@@ -58,8 +58,10 @@ class TemuController extends Controller
         $user = DB::table('barang_temuan')
             ->where('id_penemu', '=', Auth::user()->id)
             ->join('klaim', 'barang_temuan.id', '=', 'klaim.id_barang')
+            ->where('klaim.id_klaim', '!=', Auth::user()->id)
             ->where('barang_temuan.validasi', '!=', 1)
             ->where('barang_temuan.klaim', '=', '1')
+            ->where('klaim.jenis', '=', 2)
             ->distinct()
             ->get();
             // dd($user);
@@ -136,7 +138,7 @@ class TemuController extends Controller
             $file->getRealPath();
             $file->getSize();
             $file->getMimeType();
-            $filename = $post->id. 'foto-penemuan-' . Auth::user()->id . '.jpg';
+            $filename = $post->id. '-foto-penemuan-' . Auth::user()->id . '.jpg';
             
             $destinationPath = 'uploads/temuan';
             $file->move($destinationPath, $filename);
@@ -216,7 +218,7 @@ class TemuController extends Controller
             $file->getRealPath();
             $file->getSize();
             $file->getMimeType();
-            $filename = 'bukti-klaim-hilang-' . $id . '.jpg';
+            $filename = 'bukti-klaim-temuan-' . $id . '.jpg';
             
             $destinationPath = 'uploads/klaim';
             $file->move($destinationPath, $filename);
@@ -248,30 +250,26 @@ class TemuController extends Controller
                 ->update([
                     'stat' => 2,
                 ]);
-        $barang = DB::table('barang_temuan')->where('id', '=', $idbarang)->first();
-        $klaim = DB::table('klaim')->where('id', '=', $idklaim)->first();
+        // $barang = DB::table('barang_temuan')->where('id', '=', $idbarang);
+        // $klaim = DB::table('klaim')->where('id', '=', $idklaim);
+        $barang = BarangTemuan::where('id', $idbarang)->first();
+        $klaim = Klaim::where('id', $idklaim)->first();
+        // dd($klaim);
         $insert = new BarangValidasi();
         $insert->id_hilang = $barang->id;
-        $insert->id_penemu = $klaim->id_klaim;
+        $insert->id_pencari = $klaim->id_klaim;
         $insert->nama_barang = $barang->nama_barang;
-        $insert->nama_penemu = $klaim->nama_pengklaim;
-        $insert->id_pencari = $barang->id_pencari;
-        $insert->nama_pencari = $barang->nama_pencari;
+        $insert->nama_pencari = $klaim->nama_pengklaim;
+        $insert->id_penemu = $barang->id_penemu;
+        $insert->nama_penemu = $barang->nama_penemu;
         $insert->kategori = $barang->kategori;
         $insert->save();
         $insert->waktu_validasi = $insert->created_at;
         $insert->save();
 
-        if($update && $insert){
             $values = [
                 'message' => 'success',
             ];
-        }
-        else{
-            $values = [
-                'message' => 'error',
-            ];
-        }
 
         return response()->json($values);
 

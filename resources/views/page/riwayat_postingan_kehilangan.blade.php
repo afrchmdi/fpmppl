@@ -262,7 +262,7 @@ $(function () {
           <br>
           <div class="row justify-content-center">
             {{-- gambar landscape --}}
-            <div class="col-xs-12"><img class="ganti-foto" id="image" src="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:inherit; height:inherit" alt=""></div>
+            <div class="col-xs-12"><img class="js-ganti-foto" id="image" src="https://images.unsplash.com/photo-1495881674446-33314d7fb917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:inherit; height:inherit" alt=""></div>
             {{-- gambar potrait --}}
             {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
           </div>
@@ -436,7 +436,7 @@ $(document).on("change", "#foto", function () {
               // $("#Form-waktu").attr('value', waktu);
               // $("#Form-waktu").datepicker(waktu);
               $("#Form-waktu").val(waktu);
-              // $("#Form-waktu").text(waktu);
+              $(".js-ganti-foto").attr('src', foto);
               if(kategori == 1){
                 $("#Form-kategori").val("Kategori 1");
                 $("#Form-kategori").text("Kategori 1");

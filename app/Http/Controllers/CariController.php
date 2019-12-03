@@ -18,6 +18,18 @@ class CariController extends Controller
                 ->distinct()
                 ->get();
         // dd($user);
+        if($user->has('id')){
+            // dd($user);
+        }
+        else{
+            $user->id =  Auth::user()->id;
+            $user->nama_barang = NULL;
+            $user->lokasi = NULL;
+            $user->waktu = NULL;
+            $user->kategori = NULL;
+            $user->validasi = NULL;
+        }
+
         return view('page.barang_hilang', ['user' => $user]);
     }
 
@@ -70,6 +82,7 @@ class CariController extends Controller
             ->join('klaim', 'barang_hilang.id', '=', 'klaim.id_barang')
             ->where('barang_hilang.validasi', '!=', 1)
             ->where('barang_hilang.klaim', '=', '1')
+            ->where('klaim.jenis', '=', 1)
             ->distinct()
             ->get();
             // dd($user);
@@ -113,8 +126,11 @@ class CariController extends Controller
                 ->update([
                     'stat' => 2,
                 ]);
-        $barang = DB::table('barang_hilang')->where('id', '=', $idbarang)->first();
-        $klaim = DB::table('klaim')->where('id', '=', $idklaim)->first();
+        // $barang = DB::table('barang_hilang')->where('id', '=', $idbarang)->first();
+        // $klaim = DB::table('klaim')->where('id', '=', $idklaim)->first();
+        $barang = BarangHilang::where('id', $idbarang)->first();
+        $klaim = Klaim::where('id', $idklaim)->first();
+
         $insert = new BarangValidasi();
         $insert->id_hilang = $barang->id;
         $insert->id_penemu = $klaim->id_klaim;
@@ -127,16 +143,9 @@ class CariController extends Controller
         $insert->waktu_validasi = $insert->created_at;
         $insert->save();
 
-        if($update && $insert){
             $values = [
                 'message' => 'success',
             ];
-        }
-        else{
-            $values = [
-                'message' => 'error',
-            ];
-        }
 
         return response()->json($values);
 
@@ -165,6 +174,7 @@ class CariController extends Controller
                 ->where('id_klaim', '=', Auth::user()->id)
                 ->join('barang_hilang', 'barang_hilang.id', '=', 'klaim.id_barang')
                 ->select('klaim.*', 'barang_hilang.nama_barang', 'barang_hilang.nama_pencari', 'barang_hilang.lokasi', 'barang_hilang.waktu', 'barang_hilang.kategori', 'barang_hilang.validasi', 'barang_hilang.foto')
+                ->where('jenis', '=', 1)
                 ->distinct()
                 ->get();
                 // dd($user);

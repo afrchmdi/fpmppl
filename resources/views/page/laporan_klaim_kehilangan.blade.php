@@ -168,11 +168,11 @@ Dashboard
           <br>
           <div class="row justify-content-center">
             {{-- gambar landscape --}}
-            <div class="col-xs-12">
+            {{-- <div class="col-xs-12">
               <img class="js-show-foto" src="" style="width:inherit; height:inherit" alt="">
-            </div>
+            </div> --}}
             {{-- gambar potrait --}}
-            {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
+            <div class="col-xs-12"><img class="js-ganti-foto" src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div>
           </div>
         </div>
         <div class="modal-footer">
@@ -210,15 +210,15 @@ Dashboard
                 <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
               </a> --}}
               {{-- gambar potrait --}}
-              {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank">
-                <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button>
-              </a> --}}
+              {{-- <a href="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" target="_blank"> --}}
+                {{-- <button type="button" class="btn btn-block btn-info col">Buka di Jendela Baru</button> --}}
+              </a>
             </div>
           </div>    
           <br>
           <div class="row justify-content-center">
             {{-- gambar landscape --}}
-            <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
+            <div class="col-xs-12"><img class="js-ganti-foto" id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
             {{-- gambar potrait --}}
             {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
           </div>
@@ -240,6 +240,7 @@ Dashboard
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span></button>
+            {{-- {{ csrf_field() }} --}}
           <h4 class="modal-title">Penerimaan Klaim Penemuan Barang Temuan</h4>
         </div>
         <div class="modal-body">
@@ -369,7 +370,7 @@ Dashboard
                     $("#deskripsi").text(deskripsi);
       
                     // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-                    // $(".js-show-foto").attr('src', foto);
+                    $(".js-ganti-foto").attr('src', foto);
       
                   } else {
                     alert('error');
@@ -381,9 +382,10 @@ Dashboard
       
         $(document).on("click", ".js-barang", function () {
         var id = $(this).data('id');
+        console.log(id)
       
         $.ajax({
-                url: 'showposthilang',
+                url: 'showposttemu',
                 method: 'get',
                 data: {
                   id: id,
@@ -399,12 +401,13 @@ Dashboard
                     var validasi = response.validasi;
                     var foto = response.foto;
                     console.log(foto);
+                    console.log(namabarang);
                     $(".js-namabarang").text(namabarang);
                     $(".js-lokasi").text(lokasi);
                     $(".js-deskripsi").text(deskripsi);
                     $(".js-waktu").text(waktu);
                     // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-                    // $(".js-show-foto").attr('src', foto);
+                    $(".js-ganti-foto").attr('src', foto);
       
                     if(validasi == 0){
                       $(".js-validasi").text("Belum Divalidasi");

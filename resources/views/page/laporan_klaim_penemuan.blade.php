@@ -170,7 +170,7 @@ Dashboard
           <div class="row justify-content-center">
             {{-- gambar landscape --}}
             <div class="col-xs-12">
-              <img class="js-show-foto" src="" style="width:inherit; height:inherit" alt="">
+              <img class="js-ganti-foto" src="" style="width:inherit; height:inherit" alt="">
             </div>
             {{-- gambar potrait --}}
             {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
@@ -219,7 +219,7 @@ Dashboard
         <br>
         <div class="row justify-content-center">
           {{-- gambar landscape --}}
-          <div class="col-xs-12"><img id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
+          <div class="col-xs-12"><img class="js-ganti-foto" id="image" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" style="width:inherit; height:inherit" alt=""></div>
           {{-- gambar potrait --}}
           {{-- <div class="col-xs-12"><img src="https://images.unsplash.com/photo-1572119752777-3a4cf2d7a351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80" style="width:inherit; height:inherit" alt=""></div> --}}
         </div>
@@ -369,7 +369,7 @@ $(document).on("click", ".js-klaim", function () {
               $("#deskripsi").text(deskripsi);
 
               // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-              // $(".js-show-foto").attr('src', foto);
+              $(".js-ganti-foto").attr('src', foto);
 
             } else {
               alert('error');
@@ -404,7 +404,7 @@ $(document).on("click", ".js-klaim", function () {
               $(".js-deskripsi").text(deskripsi);
               $(".js-waktu").text(waktu);
               // var image_path="{{ URL::asset('upload/kehilangan/') }}";
-              // $(".js-show-foto").attr('src', foto);
+              $(".js-ganti-foto").attr('src', foto);
 
               if(validasi == 0){
                 $(".js-validasi").text("Belum Divalidasi");

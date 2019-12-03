@@ -45,6 +45,7 @@ class UserController extends Controller
                 ->where('id_klaim', '=', Auth::user()->id)
                 ->join('barang_temuan', 'barang_temuan.id', '=', 'klaim.id_barang')
                 ->select('klaim.*', 'barang_temuan.nama_barang', 'barang_temuan.nama_penemu', 'barang_temuan.lokasi', 'barang_temuan.waktu', 'barang_temuan.kategori')
+                ->where('jenis', '=', 2)
                 ->distinct()
                 ->get();
 
@@ -113,7 +114,7 @@ class UserController extends Controller
             $file->getRealPath();
             $file->getSize();
             $file->getMimeType();
-            $filename = $post->id. 'foto-kehilangan-' . Auth::user()->id . '.jpg';
+            $filename = $post->id. '-foto-kehilangan-' . Auth::user()->id . '.jpg';
             
             $destinationPath = 'uploads/kehilangan';
             $file->move($destinationPath, $filename);
