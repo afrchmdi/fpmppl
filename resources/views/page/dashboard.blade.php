@@ -12,8 +12,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-purple">
       <div class="inner">
-        <h3>2</h3>
-        <p>Total postingan kehilangan dan penemuan telah Anda sebarkan</p>
+        
       </div>
       <div class="icon">
         <i class="fa fa-sticky-note-o"></i>
@@ -26,8 +25,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-orange">
       <div class="inner">
-        <h3>0</h3>
-        <p>Total pengajuan klaim kehilangan dan penemuan</p>
+        
       </div>
       <div class="icon">
         <i class="fa fa-balance-scale"></i>
@@ -43,8 +41,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-aqua">
       <div class="inner">
-        <h3>1</h3>
-        <p>Total barang yang Anda temukan</p>
+        
       </div>
       <div class="icon">
         <i class="fa fa-mobile-phone"></i>
@@ -56,8 +53,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-red">
       <div class="inner">
-        <h3>1</h3>
-        <p>Total barang Anda telah hilang</p>
+        
       </div>
       <div class="icon">
         <i class="fa fa-briefcase"></i>
@@ -72,8 +68,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-maroon">
       <div class="inner">
-        <h3>0</h3>
-        <p>Orang klaim menemukan barang hilang Anda saat ini</p>
+        
       </div>
       <div class="icon">
         <i class="fa fa-flag-o"></i>
@@ -85,8 +80,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-olive">
       <div class="inner">
-        <h3>0</h3>
-        <p>Orang klaim memiliki barang temuan Anda saat ini</p>
+        
       </div>
       <div class="icon">
         <i class="fa fa-flag"></i>

@@ -70,7 +70,7 @@
         </li>
         <!-- kalo admin, maka man akun baru bisa -->
         <?php
-          $lalala = "admin";
+          $lalala = "user";
           if($lalala === "admin"){
         ?>
         <li><a href="/manajemen.akun"><i class="fa fa-users"></i><span>Manajemen Akun</span></a></li>
