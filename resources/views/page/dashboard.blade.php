@@ -26,7 +26,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-orange">
       <div class="inner">
-        <h3>3</h3>
+        <h3>0</h3>
         <p>Total pengajuan klaim kehilangan dan penemuan</p>
       </div>
       <div class="icon">
@@ -43,7 +43,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-aqua">
       <div class="inner">
-        <h3>10</h3>
+        <h3>1</h3>
         <p>Total barang yang Anda temukan</p>
       </div>
       <div class="icon">
@@ -56,7 +56,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-red">
       <div class="inner">
-        <h3>5</h3>
+        <h3>1</h3>
         <p>Total barang Anda telah hilang</p>
       </div>
       <div class="icon">
@@ -72,7 +72,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-maroon">
       <div class="inner">
-        <h3>1</h3>
+        <h3>0</h3>
         <p>Orang klaim menemukan barang hilang Anda saat ini</p>
       </div>
       <div class="icon">
