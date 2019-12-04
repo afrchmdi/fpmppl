@@ -12,7 +12,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-purple">
       <div class="inner">
-        
+        <h3>Riwayat Akun Postingan</h3>
       </div>
       <div class="icon">
         <i class="fa fa-sticky-note-o"></i>
@@ -25,7 +25,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-orange">
       <div class="inner">
-        
+        <h3>Riwayat Akun Klaim</h3>
       </div>
       <div class="icon">
         <i class="fa fa-balance-scale"></i>
@@ -41,7 +41,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-aqua">
       <div class="inner">
-        
+        <h3>Daftar Temuan</h3>
       </div>
       <div class="icon">
         <i class="fa fa-mobile-phone"></i>
@@ -53,7 +53,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-red">
       <div class="inner">
-        
+        <h3>Daftar Hilang</h3>
       </div>
       <div class="icon">
         <i class="fa fa-briefcase"></i>
@@ -68,7 +68,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-maroon">
       <div class="inner">
-        
+        <h3>Klaim Penemuan</h3>
       </div>
       <div class="icon">
         <i class="fa fa-flag-o"></i>
@@ -80,7 +80,7 @@ Dashboard
     <!-- small box -->
     <div class="small-box bg-olive">
       <div class="inner">
-        
+        <h3>Klaim Kehilangan</h3>
       </div>
       <div class="icon">
         <i class="fa fa-flag"></i>
